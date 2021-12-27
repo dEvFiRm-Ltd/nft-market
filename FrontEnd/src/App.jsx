@@ -1,23 +1,13 @@
-import './App.css';
+import { Route } from 'react-router-dom';
+import Dashboard from './components/admin/Dashboard';
+import Home from './components/user/Home';
 
 const App = () => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src="" alt="" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
+        <>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/admin" element={<Dashboard />} />
+        </>
     );
 };
 
