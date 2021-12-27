@@ -106,3 +106,14 @@ dist
 yarn.lock
 
 package-lock.json
+
+/.vscode
+
+*.code-workspace
+
+.editorconfig
+
+.eslintignore
+.eslintrc.json
+
+prettier.config.js
