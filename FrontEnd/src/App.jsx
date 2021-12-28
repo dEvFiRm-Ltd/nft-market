@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Dashboard from './components/admin/Dashboard';
 import Home from './components/user/Home';
 
 const App = () => {
@@ -7,7 +6,6 @@ const App = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" exact element={<Home />} />
-                <Route path="/admin" element={<Dashboard />} />
             </Routes>
         </BrowserRouter>
     );
