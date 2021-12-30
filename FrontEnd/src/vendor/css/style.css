@@ -10864,7 +10864,8 @@ body.sal-disabled [data-sal|='fade'] {
 }
 
 [data-sal|='slide'] {
-    opacity: 0;
+    /* Changed */
+    opacity: 1;
     transition-property: opacity, transform;
 }
 

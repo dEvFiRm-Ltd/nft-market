@@ -15,36 +15,29 @@ const Home = () => {
                             <div className="logo-thumbnail logo-custom-css">
                                 <a className="logo-light" href="index.html">
                                     <img
-                                        src={`${process.env.PUBLIC_URL}/assets/images/logo/logo-white.png`}
+                                        src={`${process.env.PUBLIC_URL}/images/logo/logo-white.png`}
                                         alt="nft-logo"
                                     />{' '}
                                 </a>
                                 <a className="logo-dark" href="index.html">
                                     <img
-                                        src={`${process.env.PUBLIC_URL}/assets/images/logo/logo-dark.png`}
+                                        src={`${process.env.PUBLIC_URL}/images/logo/logo-dark.png`}
                                         alt="nft-logo"
                                     />
                                 </a>
                             </div>
                             <div className="mainmenu-wrapper">
-                                <nav
-                                    id="sideNav"
-                                    className="mainmenu-nav d-none d-xl-block"
-                                >
+                                <nav id="sideNav" className="mainmenu-nav d-none d-xl-block">
                                     {/* Start Mainmanu Nav */}
                                     <ul className="mainmenu">
                                         <li className="has-droupdown has-menu-child-item">
-                                            <a
-                                                className="its_new"
-                                                href="index.html"
-                                            >
+                                            <a className="its_new" href="index.html">
                                                 Home
                                             </a>
                                             <ul className="submenu">
                                                 <li>
                                                     <a href="index.html">
-                                                        Home page One{' '}
-                                                        <i className="feather-home" />
+                                                        Home page One <i className="feather-home" />
                                                     </a>
                                                 </li>
                                                 <li>
@@ -178,15 +171,13 @@ const Home = () => {
                                                             <ul className="mega-menu-item">
                                                                 <li>
                                                                     <a href="create.html">
-                                                                        Create
-                                                                        NFT
+                                                                        Create NFT
                                                                         <i data-feather="file-plus" />
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="upload-variants.html">
-                                                                        Upload
-                                                                        Type
+                                                                        Upload Type
                                                                         <i data-feather="layers" />
                                                                     </a>
                                                                 </li>
@@ -204,15 +195,13 @@ const Home = () => {
                                                                 </li>
                                                                 <li>
                                                                     <a href="collection.html">
-                                                                        Our
-                                                                        Collection
+                                                                        Our Collection
                                                                         <i data-feather="package" />
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="upcoming_projects.html">
-                                                                        Upcoming
-                                                                        Projects
+                                                                        Upcoming Projects
                                                                         <i data-feather="loader" />
                                                                     </a>
                                                                 </li>
@@ -234,8 +223,7 @@ const Home = () => {
                                                                 </li>
                                                                 <li>
                                                                     <a href="forget.html">
-                                                                        Forget
-                                                                        Password{' '}
+                                                                        Forget Password{' '}
                                                                         <i data-feather="key" />
                                                                     </a>
                                                                 </li>
@@ -247,16 +235,13 @@ const Home = () => {
                                                                 </li>
                                                                 <li>
                                                                     <a href="connect.html">
-                                                                        Connect
-                                                                        to
-                                                                        Wallet{' '}
+                                                                        Connect to Wallet{' '}
                                                                         <i data-feather="pocket" />
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="privacy-policy.html">
-                                                                        Privacy
-                                                                        Policy{' '}
+                                                                        Privacy Policy{' '}
                                                                         <i data-feather="file-text" />
                                                                     </a>
                                                                 </li>
@@ -272,15 +257,13 @@ const Home = () => {
                                                                 </li>
                                                                 <li>
                                                                     <a href="product-details.html">
-                                                                        Product
-                                                                        Details{' '}
+                                                                        Product Details{' '}
                                                                         <i data-feather="layout" />
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="ranking.html">
-                                                                        NFT
-                                                                        Ranking
+                                                                        NFT Ranking
                                                                         <i data-feather="trending-up" />
                                                                     </a>
                                                                 </li>
@@ -292,8 +275,7 @@ const Home = () => {
                                                                 </li>
                                                                 <li>
                                                                     <a href="blog-details.html">
-                                                                        Blog
-                                                                        Details
+                                                                        Blog Details
                                                                         <i data-feather="book-open" />
                                                                     </a>
                                                                 </li>
@@ -327,16 +309,13 @@ const Home = () => {
                                                                 </li>
                                                                 <li>
                                                                     <a href="terms-condition.html">
-                                                                        Terms
-                                                                        &amp;
-                                                                        Condition{' '}
+                                                                        Terms &amp; Condition{' '}
                                                                         <i data-feather="list" />
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="coming-soon.html">
-                                                                        Coming
-                                                                        Soon{' '}
+                                                                        Coming Soon{' '}
                                                                         <i data-feather="clock" />
                                                                     </a>
                                                                 </li>
@@ -365,10 +344,7 @@ const Home = () => {
                         </div>
                         <div className="header-right">
                             <div className="setting-option d-none d-lg-block">
-                                <form
-                                    className="search-form-wrapper"
-                                    action="#"
-                                >
+                                <form className="search-form-wrapper" action="#">
                                     <input
                                         type="search"
                                         placeholder="Search Here"
@@ -394,16 +370,10 @@ const Home = () => {
                                     className="large-mobile-blog-search"
                                 >
                                     <div className="rn-search-mobile form-group">
-                                        <button
-                                            type="submit"
-                                            className="search-button"
-                                        >
+                                        <button type="submit" className="search-button">
                                             <i className="feather-search" />
                                         </button>
-                                        <input
-                                            type="text"
-                                            placeholder="Search ..."
-                                        />
+                                        <input type="text" placeholder="Search ..." />
                                     </div>
                                 </form>
                             </div>
@@ -431,7 +401,7 @@ const Home = () => {
                                 <div className="icon-box">
                                     <a href="author.html">
                                         <img
-                                            src={`${process.env.PUBLIC_URL}/assets/images/icons/boy-avater.png`}
+                                            src={`${process.env.PUBLIC_URL}/images/icons/boy-avater.png`}
                                             alt="Images"
                                         />
                                     </a>
@@ -443,9 +413,7 @@ const Home = () => {
                                                 </a>
                                             </h4>
                                             <span>
-                                                <a href="#!">
-                                                    Set Display Name
-                                                </a>
+                                                <a href="#!">Set Display Name</a>
                                             </span>
                                         </div>
                                         <div className="rn-product-inner">
@@ -454,7 +422,7 @@ const Home = () => {
                                                     <div className="thumbnail">
                                                         <a href="product-details.html">
                                                             <img
-                                                                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/portfolio-07.jpg`}
+                                                                src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-07.jpg`}
                                                                 alt="Nft Product Images"
                                                             />
                                                         </a>
@@ -465,9 +433,7 @@ const Home = () => {
                                                                 Balance
                                                             </a>
                                                         </h6>
-                                                        <span className="price">
-                                                            25 ETH
-                                                        </span>
+                                                        <span className="price">25 ETH</span>
                                                     </div>
                                                     <div className="button" />
                                                 </li>
@@ -475,7 +441,7 @@ const Home = () => {
                                                     <div className="thumbnail">
                                                         <a href="product-details.html">
                                                             <img
-                                                                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/portfolio-01.jpg`}
+                                                                src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-01.jpg`}
                                                                 alt="Nft Product Images"
                                                             />
                                                         </a>
@@ -486,42 +452,29 @@ const Home = () => {
                                                                 Balance
                                                             </a>
                                                         </h6>
-                                                        <span className="price">
-                                                            25 ETH
-                                                        </span>
+                                                        <span className="price">25 ETH</span>
                                                     </div>
                                                     <div className="button" />
                                                 </li>
                                             </ul>
                                         </div>
                                         <div className="add-fund-button mt--20 pb--20">
-                                            <a
-                                                className="btn btn-primary-alta w-100"
-                                                href="#!"
-                                            >
+                                            <a className="btn btn-primary-alta w-100" href="#!">
                                                 Add Your More Funds
                                             </a>
                                         </div>
                                         <ul className="list-inner">
                                             <li>
-                                                <a href="author.html">
-                                                    My Profile
-                                                </a>
+                                                <a href="author.html">My Profile</a>
                                             </li>
                                             <li>
-                                                <a href="author.html">
-                                                    Edit Profile
-                                                </a>
+                                                <a href="author.html">Edit Profile</a>
                                             </li>
                                             <li>
-                                                <a href="connect.html">
-                                                    Manage funds
-                                                </a>
+                                                <a href="connect.html">Manage funds</a>
                                             </li>
                                             <li>
-                                                <a href="login.html">
-                                                    Sign Out
-                                                </a>
+                                                <a href="login.html">Sign Out</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -529,39 +482,25 @@ const Home = () => {
                             </div>
                             <div className="setting-option mobile-menu-bar d-block d-xl-none">
                                 <div className="hamberger">
-                                    <button
-                                        type="button"
-                                        className="hamberger-button"
-                                    >
+                                    <button type="button" className="hamberger-button">
                                         <i className="feather-menu" />
                                     </button>
                                 </div>
                             </div>
-                            <div
-                                id="my_switcher"
-                                className="setting-option my_switcher"
-                            >
+                            <div id="my_switcher" className="setting-option my_switcher">
                                 <ul>
                                     <li>
-                                        <a
-                                            href="!#"
-                                            data-theme="light"
-                                            className="setColor light"
-                                        >
+                                        <a href="!#" data-theme="light" className="setColor light">
                                             <img
-                                                src={`${process.env.PUBLIC_URL}/assets/images/icons/sun-01.svg`}
+                                                src={`${process.env.PUBLIC_URL}/images/icons/sun-01.svg`}
                                                 alt="Sun images"
                                             />
                                         </a>
                                     </li>
                                     <li>
-                                        <a
-                                            href="!#"
-                                            data-theme="dark"
-                                            className="setColor dark"
-                                        >
+                                        <a href="!#" data-theme="dark" className="setColor dark">
                                             <img
-                                                src={`${process.env.PUBLIC_URL}/assets/images/icons/vector.svg`}
+                                                src={`${process.env.PUBLIC_URL}/images/icons/vector.svg`}
                                                 alt="Vector Images"
                                             />
                                         </a>
@@ -580,13 +519,13 @@ const Home = () => {
                         <div className="logo logo-custom-css">
                             <a className="logo-light" href="index.html">
                                 <img
-                                    src={`${process.env.PUBLIC_URL}/assets/images/logo/logo-white.png`}
+                                    src={`${process.env.PUBLIC_URL}/images/logo/logo-white.png`}
                                     alt="nft-logo"
                                 />
                             </a>
                             <a className="logo-dark" href="index.html">
                                 <img
-                                    src={`${process.env.PUBLIC_URL}/assets/images/logo/logo-dark.png`}
+                                    src={`${process.env.PUBLIC_URL}/images/logo/logo-dark.png`}
                                     alt="nft-logo"
                                 />
                             </a>
@@ -607,8 +546,7 @@ const Home = () => {
                                 <ul className="submenu">
                                     <li>
                                         <a href="index.html">
-                                            Home page One{' '}
-                                            <i className="feather-home" />
+                                            Home page One <i className="feather-home" />
                                         </a>
                                     </li>
                                     <li>
@@ -706,26 +644,17 @@ const Home = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a
-                                            className="live-expo"
-                                            href="explore-live.html"
-                                        >
+                                        <a className="live-expo" href="explore-live.html">
                                             Live Explore
                                         </a>
                                     </li>
                                     <li>
-                                        <a
-                                            className="live-expo"
-                                            href="explore-live-two.html"
-                                        >
+                                        <a className="live-expo" href="explore-live-two.html">
                                             Live Explore Carousel
                                         </a>
                                     </li>
                                     <li>
-                                        <a
-                                            className="live-expo"
-                                            href="explore-live-three.html"
-                                        >
+                                        <a className="live-expo" href="explore-live-three.html">
                                             Live With Place Bid
                                         </a>
                                     </li>
@@ -782,8 +711,7 @@ const Home = () => {
                                                 <ul className="mega-menu-item">
                                                     <li>
                                                         <a href="login.html">
-                                                            Log In{' '}
-                                                            <i data-feather="log-in" />
+                                                            Log In <i data-feather="log-in" />
                                                         </a>
                                                     </li>
                                                     <li>
@@ -794,8 +722,7 @@ const Home = () => {
                                                     </li>
                                                     <li>
                                                         <a href="forget.html">
-                                                            Forget Password{' '}
-                                                            <i data-feather="key" />
+                                                            Forget Password <i data-feather="key" />
                                                         </a>
                                                     </li>
                                                     <li>
@@ -852,8 +779,7 @@ const Home = () => {
                                                     </li>
                                                     <li>
                                                         <a href="404.html">
-                                                            404{' '}
-                                                            <i data-feather="alert-triangle" />
+                                                            404 <i data-feather="alert-triangle" />
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -868,8 +794,7 @@ const Home = () => {
                                                     </li>
                                                     <li>
                                                         <a href="contact.html">
-                                                            Contact{' '}
-                                                            <i data-feather="headphones" />
+                                                            Contact <i data-feather="headphones" />
                                                         </a>
                                                     </li>
                                                     <li>
@@ -880,21 +805,18 @@ const Home = () => {
                                                     </li>
                                                     <li>
                                                         <a href="terms-condition.html">
-                                                            Terms &amp;
-                                                            Condition{' '}
+                                                            Terms &amp; Condition{' '}
                                                             <i data-feather="list" />
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="coming-soon.html">
-                                                            Coming Soon{' '}
-                                                            <i data-feather="clock" />
+                                                            Coming Soon <i data-feather="clock" />
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="maintenance.html">
-                                                            Maintenance{' '}
-                                                            <i data-feather="cpu" />
+                                                            Maintenance <i data-feather="cpu" />
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -936,8 +858,7 @@ const Home = () => {
                                     data-sal-delay="200"
                                     data-sal-duration="800"
                                 >
-                                    Search your rare NFT &sbquo;s by world{' '}
-                                    <br /> class artists
+                                    Search your rare NFT&rsquo;s by world <br /> class artists
                                 </h2>
                                 <p
                                     className="banner-disc-one"
@@ -945,10 +866,9 @@ const Home = () => {
                                     data-sal-delay="250"
                                     data-sal-duration="800"
                                 >
-                                    Where Bitcoin was hailed as the digital
-                                    answer to currency, NFTs
-                                    <br /> are now being touted as the digital
-                                    answer to collectables.
+                                    Where Bitcoin was hailed as the digital answer to currency, NFTs
+                                    <br /> are now being touted as the digital answer to
+                                    collectables.
                                 </p>
                                 <div className="button-group">
                                     <a
@@ -977,7 +897,7 @@ const Home = () => {
                                 <div className="slider-thumbnail thumbnail-overlay">
                                     <a href="product-details.html">
                                         <img
-                                            src={`${process.env.PUBLIC_URL}/assets/images/banner/banner-04.jpg`}
+                                            src={`${process.env.PUBLIC_URL}/images/banner/banner-04.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
@@ -990,15 +910,13 @@ const Home = () => {
                                 <div className="slider-thumbnail thumbnail-overlay">
                                     <a href="product-details.html">
                                         <img
-                                            src={`${process.env.PUBLIC_URL}/assets/images/banner/banner-01.jpg`}
+                                            src={`${process.env.PUBLIC_URL}/images/banner/banner-01.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
                                     <div className="read-wrapper">
                                         <h5>
-                                            <a href="product-details.html">
-                                                HasLivbe
-                                            </a>
+                                            <a href="product-details.html">HasLivbe</a>
                                         </h5>
                                         <span>Md. Master</span>
                                     </div>
@@ -1007,15 +925,13 @@ const Home = () => {
                                 <div className="slider-thumbnail thumbnail-overlay">
                                     <a href="product-details.html">
                                         <img
-                                            src={`${process.env.PUBLIC_URL}/assets/images/banner/banner-02.jpg`}
+                                            src={`${process.env.PUBLIC_URL}/images/banner/banner-02.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
                                     <div className="read-wrapper">
                                         <h5>
-                                            <a href="product-details.html">
-                                                Ladicon Mos
-                                            </a>
+                                            <a href="product-details.html">Ladicon Mos</a>
                                         </h5>
                                         <span>John Lee</span>
                                     </div>
@@ -1024,7 +940,7 @@ const Home = () => {
                                 <div className="slider-thumbnail thumbnail-overlay">
                                     <a href="product-details.html">
                                         <img
-                                            src={`${process.env.PUBLIC_URL}/assets/images/banner/banner-03.jpg`}
+                                            src={`${process.env.PUBLIC_URL}/images/banner/banner-03.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
@@ -1066,45 +982,32 @@ const Home = () => {
                                         <div className="card-thumbnail">
                                             <a href="product-details.html">
                                                 <img
-                                                    src={`${process.env.PUBLIC_URL}/assets/images/portfolio/portfolio-07.jpg`}
+                                                    src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-07.jpg`}
                                                     alt="NFT_portfolio"
                                                 />
                                             </a>
-                                            <div
-                                                className="countdown"
-                                                data-date="2022-11-09"
-                                            >
+                                            <div className="countdown" data-date="2022-11-09">
                                                 <div className="countdown-container days">
-                                                    <span className="countdown-value">
-                                                        87
-                                                    </span>
+                                                    <span className="countdown-value">87</span>
                                                     <span className="countdown-heading">
                                                         D&sbquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container hours">
-                                                    <span className="countdown-value">
-                                                        23
-                                                    </span>
+                                                    <span className="countdown-value">23</span>
                                                     <span className="countdown-heading">
                                                         H&sbquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container minutes">
-                                                    <span className="countdown-value">
-                                                        38
-                                                    </span>
+                                                    <span className="countdown-value">38</span>
                                                     <span className="countdown-heading">
-                                                        Min &sbquo;s
+                                                        Min&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container seconds">
-                                                    <span className="countdown-value">
-                                                        27
-                                                    </span>
-                                                    <span className="countdown-heading">
-                                                        Sec
-                                                    </span>
+                                                    <span className="countdown-value">27</span>
+                                                    <span className="countdown-heading">Sec</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1116,7 +1019,7 @@ const Home = () => {
                                                     data-tooltip="Mark JOrdan"
                                                 >
                                                     <img
-                                                        src={`${process.env.PUBLIC_URL}/assets/images/client/client-2.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-2.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
@@ -1126,7 +1029,7 @@ const Home = () => {
                                                     data-tooltip="Mark"
                                                 >
                                                     <img
-                                                        src={`${process.env.PUBLIC_URL}/assets/images/client/client-3.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-3.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
@@ -1136,14 +1039,11 @@ const Home = () => {
                                                     data-tooltip="Jordan"
                                                 >
                                                     <img
-                                                        src={`${process.env.PUBLIC_URL}/assets/images/client/client-5.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-5.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
-                                                <a
-                                                    className="more-author-text"
-                                                    href="#!"
-                                                >
+                                                <a className="more-author-text" href="#!">
                                                     20+ Place Bit.
                                                 </a>
                                             </div>
@@ -1191,17 +1091,11 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="product-details.html">
-                                            <span className="product-name">
-                                                Preatent
-                                            </span>
+                                            <span className="product-name">Preatent</span>
                                         </a>
-                                        <span className="latest-bid">
-                                            Highest bid 1/20
-                                        </span>
+                                        <span className="latest-bid">Highest bid 1/20</span>
                                         <div className="bid-react-area">
-                                            <div className="last-bid">
-                                                0.244wETH
-                                            </div>
+                                            <div className="last-bid">0.244wETH</div>
                                             <div className="react-area">
                                                 <svg
                                                     viewBox="0 0 17 16"
@@ -1216,9 +1110,7 @@ const Home = () => {
                                                         strokeWidth="2"
                                                     />
                                                 </svg>
-                                                <span className="number">
-                                                    322
-                                                </span>
+                                                <span className="number">322</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1231,45 +1123,32 @@ const Home = () => {
                                         <div className="card-thumbnail">
                                             <a href="product-details.html">
                                                 <img
-                                                    src={`${process.env.PUBLIC_URL}/assets/images/portfolio/portfolio-10.jpg`}
+                                                    src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-10.jpg`}
                                                     alt="NFT_portfolio"
                                                 />
                                             </a>
-                                            <div
-                                                className="countdown"
-                                                data-date="2022-10-09"
-                                            >
+                                            <div className="countdown" data-date="2022-10-09">
                                                 <div className="countdown-container days">
-                                                    <span className="countdown-value">
-                                                        87
-                                                    </span>
+                                                    <span className="countdown-value">87</span>
                                                     <span className="countdown-heading">
-                                                        D&sbquo;s
+                                                        D&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container hours">
-                                                    <span className="countdown-value">
-                                                        23
-                                                    </span>
+                                                    <span className="countdown-value">23</span>
                                                     <span className="countdown-heading">
-                                                        H&sbquo;s
+                                                        H&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container minutes">
-                                                    <span className="countdown-value">
-                                                        38
-                                                    </span>
+                                                    <span className="countdown-value">38</span>
                                                     <span className="countdown-heading">
-                                                        Min&sbquo;s
+                                                        Min&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container seconds">
-                                                    <span className="countdown-value">
-                                                        27
-                                                    </span>
-                                                    <span className="countdown-heading">
-                                                        Sec
-                                                    </span>
+                                                    <span className="countdown-value">27</span>
+                                                    <span className="countdown-heading">Sec</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1281,7 +1160,7 @@ const Home = () => {
                                                     data-tooltip="Farik Shaikh"
                                                 >
                                                     <img
-                                                        src={`${process.env.PUBLIC_URL}/assets/images/client/client-1.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-1.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
@@ -1291,7 +1170,7 @@ const Home = () => {
                                                     data-tooltip="Shaikh"
                                                 >
                                                     <img
-                                                        src={`${process.env.PUBLIC_URL}/assets/images/client/client-6.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-6.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
@@ -1301,14 +1180,11 @@ const Home = () => {
                                                     data-tooltip="Farik"
                                                 >
                                                     <img
-                                                        src={`${process.env.PUBLIC_URL}/assets/images/client/client-8.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-8.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
-                                                <a
-                                                    className="more-author-text"
-                                                    href="#!"
-                                                >
+                                                <a className="more-author-text" href="#!">
                                                     15+ Place Bit.
                                                 </a>
                                             </div>
@@ -1357,17 +1233,11 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="product-details.html">
-                                            <span className="product-name">
-                                                #21 The Wonder
-                                            </span>
+                                            <span className="product-name">#21 The Wonder</span>
                                         </a>
-                                        <span className="latest-bid">
-                                            Highest bid 1/20
-                                        </span>
+                                        <span className="latest-bid">Highest bid 1/20</span>
                                         <div className="bid-react-area">
-                                            <div className="last-bid">
-                                                0.244wETH
-                                            </div>
+                                            <div className="last-bid">0.244wETH</div>
                                             <div className="react-area">
                                                 <svg
                                                     viewBox="0 0 17 16"
@@ -1382,9 +1252,7 @@ const Home = () => {
                                                         strokeWidth="2"
                                                     />
                                                 </svg>
-                                                <span className="number">
-                                                    322
-                                                </span>
+                                                <span className="number">322</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1397,45 +1265,32 @@ const Home = () => {
                                         <div className="card-thumbnail">
                                             <a href="product-details.html">
                                                 <img
-                                                    src={`${process.env.PUBLIC_URL}/assets/images/portfolio/portfolio-03.jpg`}
+                                                    src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-03.jpg`}
                                                     alt="NFT_portfolio"
                                                 />
                                             </a>
-                                            <div
-                                                className="countdown"
-                                                data-date="2023-12-09"
-                                            >
+                                            <div className="countdown" data-date="2023-12-09">
                                                 <div className="countdown-container days">
-                                                    <span className="countdown-value">
-                                                        87
-                                                    </span>
+                                                    <span className="countdown-value">87</span>
                                                     <span className="countdown-heading">
-                                                        D&sbquo;s
+                                                        D&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container hours">
-                                                    <span className="countdown-value">
-                                                        23
-                                                    </span>
+                                                    <span className="countdown-value">23</span>
                                                     <span className="countdown-heading">
-                                                        H&sbquo;s
+                                                        H&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container minutes">
-                                                    <span className="countdown-value">
-                                                        38
-                                                    </span>
+                                                    <span className="countdown-value">38</span>
                                                     <span className="countdown-heading">
-                                                        Min&sbquo;s
+                                                        Min&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container seconds">
-                                                    <span className="countdown-value">
-                                                        27
-                                                    </span>
-                                                    <span className="countdown-heading">
-                                                        Sec
-                                                    </span>
+                                                    <span className="countdown-value">27</span>
+                                                    <span className="countdown-heading">Sec</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1447,7 +1302,7 @@ const Home = () => {
                                                     data-tooltip="Mona Lisa"
                                                 >
                                                     <img
-                                                        src={`${process.env.PUBLIC_URL}/assets/images/client/client-8.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-8.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
@@ -1457,7 +1312,7 @@ const Home = () => {
                                                     data-tooltip="Lisa"
                                                 >
                                                     <img
-                                                        src={`${process.env.PUBLIC_URL}/assets/images/client/client-4.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-4.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
@@ -1467,14 +1322,11 @@ const Home = () => {
                                                     data-tooltip="Mona"
                                                 >
                                                     <img
-                                                        src={`${process.env.PUBLIC_URL}/assets/images/client/client-9.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-9.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
-                                                <a
-                                                    className="more-author-text"
-                                                    href="#!"
-                                                >
+                                                <a className="more-author-text" href="#!">
                                                     12+ Place Bit.
                                                 </a>
                                             </div>
@@ -1522,17 +1374,11 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="product-details.html">
-                                            <span className="product-name">
-                                                OrBid6
-                                            </span>
+                                            <span className="product-name">OrBid6</span>
                                         </a>
-                                        <span className="latest-bid">
-                                            Highest bid 2/31
-                                        </span>
+                                        <span className="latest-bid">Highest bid 2/31</span>
                                         <div className="bid-react-area">
-                                            <div className="last-bid">
-                                                0.2128wETH
-                                            </div>
+                                            <div className="last-bid">0.2128wETH</div>
                                             <div className="react-area">
                                                 <svg
                                                     viewBox="0 0 17 16"
@@ -1547,9 +1393,7 @@ const Home = () => {
                                                         strokeWidth="2"
                                                     />
                                                 </svg>
-                                                <span className="number">
-                                                    12
-                                                </span>
+                                                <span className="number">12</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1562,45 +1406,32 @@ const Home = () => {
                                         <div className="card-thumbnail">
                                             <a href="product-details.html">
                                                 <img
-                                                    src={`${process.env.PUBLIC_URL}/assets/images/portfolio/portfolio-04.jpg`}
+                                                    src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-04.jpg`}
                                                     alt="NFT_portfolio"
                                                 />
                                             </a>
-                                            <div
-                                                className="countdown"
-                                                data-date="2024-10-08"
-                                            >
+                                            <div className="countdown" data-date="2024-10-08">
                                                 <div className="countdown-container days">
-                                                    <span className="countdown-value">
-                                                        87
-                                                    </span>
+                                                    <span className="countdown-value">87</span>
                                                     <span className="countdown-heading">
-                                                        D&sbquo;s
+                                                        D&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container hours">
-                                                    <span className="countdown-value">
-                                                        23
-                                                    </span>
+                                                    <span className="countdown-value">23</span>
                                                     <span className="countdown-heading">
-                                                        H&sbquo;s
+                                                        H&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container minutes">
-                                                    <span className="countdown-value">
-                                                        38
-                                                    </span>
+                                                    <span className="countdown-value">38</span>
                                                     <span className="countdown-heading">
-                                                        Min&sbquo;s
+                                                        Min&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container seconds">
-                                                    <span className="countdown-value">
-                                                        27
-                                                    </span>
-                                                    <span className="countdown-heading">
-                                                        Sec
-                                                    </span>
+                                                    <span className="countdown-value">27</span>
+                                                    <span className="countdown-heading">Sec</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1612,7 +1443,7 @@ const Home = () => {
                                                     data-tooltip="Falak Sabbir"
                                                 >
                                                     <img
-                                                        src={`${process.env.PUBLIC_URL}/assets/images/client/client-2.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-2.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
@@ -1622,7 +1453,7 @@ const Home = () => {
                                                     data-tooltip="Sabbir"
                                                 >
                                                     <img
-                                                        src={`${process.env.PUBLIC_URL}/assets/images/client/client-1.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-1.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
@@ -1632,14 +1463,11 @@ const Home = () => {
                                                     data-tooltip="Falak"
                                                 >
                                                     <img
-                                                        src={`${process.env.PUBLIC_URL}/assets/images/client/client-11.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-11.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
-                                                <a
-                                                    className="more-author-text"
-                                                    href="#!"
-                                                >
+                                                <a className="more-author-text" href="#!">
                                                     16+ Place Bit.
                                                 </a>
                                             </div>
@@ -1687,17 +1515,11 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="product-details.html">
-                                            <span className="product-name">
-                                                Morgan11
-                                            </span>
+                                            <span className="product-name">Morgan11</span>
                                         </a>
-                                        <span className="latest-bid">
-                                            Highest bid 3/16
-                                        </span>
+                                        <span className="latest-bid">Highest bid 3/16</span>
                                         <div className="bid-react-area">
-                                            <div className="last-bid">
-                                                0.265wETH
-                                            </div>
+                                            <div className="last-bid">0.265wETH</div>
                                             <div className="react-area">
                                                 <svg
                                                     viewBox="0 0 17 16"
@@ -1712,9 +1534,7 @@ const Home = () => {
                                                         strokeWidth="2"
                                                     />
                                                 </svg>
-                                                <span className="number">
-                                                    20
-                                                </span>
+                                                <span className="number">20</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1727,45 +1547,32 @@ const Home = () => {
                                         <div className="card-thumbnail">
                                             <a href="product-details.html">
                                                 <img
-                                                    src={`${process.env.PUBLIC_URL}/assets/images/portfolio/portfolio-06.jpg`}
+                                                    src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-06.jpg`}
                                                     alt="NFT_portfolio"
                                                 />
                                             </a>
-                                            <div
-                                                className="countdown"
-                                                data-date="2023-11-08"
-                                            >
+                                            <div className="countdown" data-date="2023-11-08">
                                                 <div className="countdown-container days">
-                                                    <span className="countdown-value">
-                                                        87
-                                                    </span>
+                                                    <span className="countdown-value">87</span>
                                                     <span className="countdown-heading">
-                                                        D&sbquo;s
+                                                        D&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container hours">
-                                                    <span className="countdown-value">
-                                                        23
-                                                    </span>
+                                                    <span className="countdown-value">23</span>
                                                     <span className="countdown-heading">
-                                                        H&sbquo;s
+                                                        H&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container minutes">
-                                                    <span className="countdown-value">
-                                                        38
-                                                    </span>
+                                                    <span className="countdown-value">38</span>
                                                     <span className="countdown-heading">
-                                                        Min&sbquo;s
+                                                        Min&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container seconds">
-                                                    <span className="countdown-value">
-                                                        27
-                                                    </span>
-                                                    <span className="countdown-heading">
-                                                        Sec
-                                                    </span>
+                                                    <span className="countdown-value">27</span>
+                                                    <span className="countdown-heading">Sec</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1777,7 +1584,7 @@ const Home = () => {
                                                     data-tooltip="Oram Kasin"
                                                 >
                                                     <img
-                                                        src={`/assets/images/client/client-8.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-8.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
@@ -1787,7 +1594,7 @@ const Home = () => {
                                                     data-tooltip="Kasin"
                                                 >
                                                     <img
-                                                        src={`/assets/images/client/client-2.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-2.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
@@ -1797,14 +1604,11 @@ const Home = () => {
                                                     data-tooltip="Oram"
                                                 >
                                                     <img
-                                                        src={`/assets/images/client/client-1.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-1.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
-                                                <a
-                                                    className="more-author-text"
-                                                    href="#!"
-                                                >
+                                                <a className="more-author-text" href="#!">
                                                     10+ Place Bit.
                                                 </a>
                                             </div>
@@ -1852,17 +1656,11 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="product-details.html">
-                                            <span className="product-name">
-                                                mAtal8
-                                            </span>
+                                            <span className="product-name">mAtal8</span>
                                         </a>
-                                        <span className="latest-bid">
-                                            Highest bid 6/50
-                                        </span>
+                                        <span className="latest-bid">Highest bid 6/50</span>
                                         <div className="bid-react-area">
-                                            <div className="last-bid">
-                                                0.244wETH
-                                            </div>
+                                            <div className="last-bid">0.244wETH</div>
                                             <div className="react-area">
                                                 <svg
                                                     viewBox="0 0 17 16"
@@ -1877,9 +1675,7 @@ const Home = () => {
                                                         strokeWidth="2"
                                                     />
                                                 </svg>
-                                                <span className="number">
-                                                    205
-                                                </span>
+                                                <span className="number">205</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1891,45 +1687,32 @@ const Home = () => {
                                         <div className="card-thumbnail">
                                             <a href="product-details.html">
                                                 <img
-                                                    src={`/assets/images/portfolio/portfolio-10.jpg`}
+                                                    src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-10.jpg`}
                                                     alt="NFT_portfolio"
                                                 />
                                             </a>
-                                            <div
-                                                className="countdown"
-                                                data-date="2023-11-08"
-                                            >
+                                            <div className="countdown" data-date="2023-11-08">
                                                 <div className="countdown-container days">
-                                                    <span className="countdown-value">
-                                                        87
-                                                    </span>
+                                                    <span className="countdown-value">87</span>
                                                     <span className="countdown-heading">
-                                                        D&sbquo;s
+                                                        D&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container hours">
-                                                    <span className="countdown-value">
-                                                        23
-                                                    </span>
+                                                    <span className="countdown-value">23</span>
                                                     <span className="countdown-heading">
-                                                        H&sbquo;s
+                                                        H&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container minutes">
-                                                    <span className="countdown-value">
-                                                        38
-                                                    </span>
+                                                    <span className="countdown-value">38</span>
                                                     <span className="countdown-heading">
-                                                        Min&sbquo;s
+                                                        Min&rsquo;s
                                                     </span>
                                                 </div>
                                                 <div className="countdown-container seconds">
-                                                    <span className="countdown-value">
-                                                        27
-                                                    </span>
-                                                    <span className="countdown-heading">
-                                                        Sec
-                                                    </span>
+                                                    <span className="countdown-value">27</span>
+                                                    <span className="countdown-heading">Sec</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1941,7 +1724,7 @@ const Home = () => {
                                                     data-tooltip="Oram Kasin"
                                                 >
                                                     <img
-                                                        src={`/assets/images/client/client-10.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-10.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
@@ -1951,7 +1734,7 @@ const Home = () => {
                                                     data-tooltip="Kasin"
                                                 >
                                                     <img
-                                                        src={`/assets/images/client/client-6.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-6.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
@@ -1961,14 +1744,11 @@ const Home = () => {
                                                     data-tooltip="Oram"
                                                 >
                                                     <img
-                                                        src={`/assets/images/client/client-1.png`}
+                                                        src={`${process.env.PUBLIC_URL}/images/client/client-1.png`}
                                                         alt="Nft_Profile"
                                                     />
                                                 </a>
-                                                <a
-                                                    className="more-author-text"
-                                                    href="#!"
-                                                >
+                                                <a className="more-author-text" href="#!">
                                                     11+ Place Bit.
                                                 </a>
                                             </div>
@@ -2016,17 +1796,11 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="product-details.html">
-                                            <span className="product-name">
-                                                Delta25
-                                            </span>
+                                            <span className="product-name">Delta25</span>
                                         </a>
-                                        <span className="latest-bid">
-                                            Highest bid 6/30
-                                        </span>
+                                        <span className="latest-bid">Highest bid 6/30</span>
                                         <div className="bid-react-area">
-                                            <div className="last-bid">
-                                                0.234wETH
-                                            </div>
+                                            <div className="last-bid">0.234wETH</div>
                                             <div className="react-area">
                                                 <svg
                                                     viewBox="0 0 17 16"
@@ -2041,9 +1815,7 @@ const Home = () => {
                                                         strokeWidth="2"
                                                     />
                                                 </svg>
-                                                <span className="number">
-                                                    205
-                                                </span>
+                                                <span className="number">205</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2079,18 +1851,14 @@ const Home = () => {
                                     LIKES
                                 </label>
                                 <select id="likes">
-                                    <option data-display="Most liked">
-                                        Most liked
-                                    </option>
+                                    <option data-display="Most liked">Most liked</option>
                                     <option value="1">Least liked</option>
                                 </select>
                             </div>
                             <div className="filter-select-option">
                                 <label className="filter-leble">Category</label>
                                 <select>
-                                    <option data-display="Category">
-                                        Category
-                                    </option>
+                                    <option data-display="Category">Category</option>
                                     <option value="1">Art</option>
                                     <option value="1">Photograph</option>
                                     <option value="2">Metaverses</option>
@@ -2100,31 +1868,19 @@ const Home = () => {
                             </div>
 
                             <div className="filter-select-option">
-                                <label className="filter-leble">
-                                    Collections
-                                </label>
+                                <label className="filter-leble">Collections</label>
                                 <select>
-                                    <option data-display="Collections">
-                                        Collections
-                                    </option>
+                                    <option data-display="Collections">Collections</option>
                                     <option value="1">BoredApeYachtClub</option>
-                                    <option value="2">
-                                        MutantApeYachtClub
-                                    </option>
-                                    <option value="4">
-                                        Art Blocks Factory
-                                    </option>
+                                    <option value="2">MutantApeYachtClub</option>
+                                    <option value="4">Art Blocks Factory</option>
                                 </select>
                             </div>
 
                             <div className="filter-select-option">
-                                <label className="filter-leble">
-                                    Sale type
-                                </label>
+                                <label className="filter-leble">Sale type</label>
                                 <select>
-                                    <option data-display="Sale type">
-                                        Sale type
-                                    </option>
+                                    <option data-display="Sale type">Sale type</option>
                                     <option value="1">Fixed price</option>
                                     <option value="2">Timed auction</option>
                                     <option value="4">Not for sale</option>
@@ -2133,9 +1889,7 @@ const Home = () => {
                             </div>
 
                             <div className="filter-select-option">
-                                <label className="filter-leble">
-                                    Price Range
-                                </label>
+                                <label className="filter-leble">Price Range</label>
                                 <div className="price_filter s-filter clear">
                                     <form action="#" method="GET">
                                         <div id="slider-range" />
@@ -2143,11 +1897,7 @@ const Home = () => {
                                             <div className="price__output--wrap">
                                                 <div className="price--output">
                                                     <span>Price :</span>
-                                                    <input
-                                                        type="text"
-                                                        id="amount"
-                                                        readOnly
-                                                    />
+                                                    <input type="text" id="amount" readOnly />
                                                 </div>
                                                 <div className="price--filter">
                                                     <a
@@ -2177,14 +1927,11 @@ const Home = () => {
                                 <div className="card-thumbnail">
                                     <a href="product-details.html">
                                         <img
-                                            src={`/assets/images/portfolio/portfolio-01.jpg`}
+                                            src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-01.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
-                                    <a
-                                        href="product-details.html"
-                                        className="btn btn-primary"
-                                    >
+                                    <a href="product-details.html" className="btn btn-primary">
                                         Place Bid
                                     </a>
                                 </div>
@@ -2196,7 +1943,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-2.png`}
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-2.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -2206,7 +1953,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-3.png`}
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-3.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -2216,14 +1963,11 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-4.png`}
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-4.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
-                                        <a
-                                            className="more-author-text"
-                                            href="#!"
-                                        >
+                                        <a className="more-author-text" href="#!">
                                             9+ Place Bit.
                                         </a>
                                     </div>
@@ -2271,13 +2015,9 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <a href="product-details.html">
-                                    <span className="product-name">
-                                        Diamond Dog
-                                    </span>
+                                    <span className="product-name">Diamond Dog</span>
                                 </a>
-                                <span className="latest-bid">
-                                    Highest bid 1/20
-                                </span>
+                                <span className="latest-bid">Highest bid 1/20</span>
                                 <div className="bid-react-area">
                                     <div className="last-bid">0.244wETH</div>
                                     <div className="react-area">
@@ -2311,14 +2051,11 @@ const Home = () => {
                                 <div className="card-thumbnail">
                                     <a href="product-details.html">
                                         <img
-                                            src={`/assets/images/portfolio/portfolio-02.jpg`}
+                                            src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-02.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
-                                    <a
-                                        href="product-details.html"
-                                        className="btn btn-primary"
-                                    >
+                                    <a href="product-details.html" className="btn btn-primary">
                                         Place Bid
                                     </a>
                                 </div>
@@ -2330,7 +2067,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-1.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-1.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -2340,7 +2077,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-10.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-10.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -2350,14 +2087,11 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-11.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-11.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
-                                        <a
-                                            className="more-author-text"
-                                            href="#!"
-                                        >
+                                        <a className="more-author-text" href="#!">
                                             10+ Place Bit.
                                         </a>
                                     </div>
@@ -2407,9 +2141,7 @@ const Home = () => {
                                 <a href="product-details.html">
                                     <span className="product-name">OrBid6</span>
                                 </a>
-                                <span className="latest-bid">
-                                    Highest bid 1/20
-                                </span>
+                                <span className="latest-bid">Highest bid 1/20</span>
                                 <div className="bid-react-area">
                                     <div className="last-bid">0.244wETH</div>
                                     <div className="react-area">
@@ -2443,14 +2175,11 @@ const Home = () => {
                                 <div className="card-thumbnail">
                                     <a href="product-details.html">
                                         <img
-                                            src={`/assets/images/portfolio/portfolio-03.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-03.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
-                                    <a
-                                        href="product-details.html"
-                                        className="btn btn-primary"
-                                    >
+                                    <a href="product-details.html" className="btn btn-primary">
                                         Place Bid
                                     </a>
                                 </div>
@@ -2462,7 +2191,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-1.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-1.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -2472,7 +2201,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-10.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-10.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -2482,14 +2211,11 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-11.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-11.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
-                                        <a
-                                            className="more-author-text"
-                                            href="#!"
-                                        >
+                                        <a className="more-author-text" href="#!">
                                             10+ Place Bit.
                                         </a>
                                     </div>
@@ -2537,13 +2263,9 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <a href="product-details.html">
-                                    <span className="product-name">
-                                        Morgan11
-                                    </span>
+                                    <span className="product-name">Morgan11</span>
                                 </a>
-                                <span className="latest-bid">
-                                    Highest bid 1/20
-                                </span>
+                                <span className="latest-bid">Highest bid 1/20</span>
                                 <div className="bid-react-area">
                                     <div className="last-bid">0.244wETH</div>
                                     <div className="react-area">
@@ -2577,14 +2299,11 @@ const Home = () => {
                                 <div className="card-thumbnail">
                                     <a href="product-details.html">
                                         <img
-                                            src={`/assets/images/portfolio/portfolio-04.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-04.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
-                                    <a
-                                        href="product-details.html"
-                                        className="btn btn-primary"
-                                    >
+                                    <a href="product-details.html" className="btn btn-primary">
                                         Place Bid
                                     </a>
                                 </div>
@@ -2596,7 +2315,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-1.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-1.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -2606,7 +2325,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-10.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-10.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -2616,14 +2335,11 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-9.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-9.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
-                                        <a
-                                            className="more-author-text"
-                                            href="#!"
-                                        >
+                                        <a className="more-author-text" href="#!">
                                             21+ Place Bit.
                                         </a>
                                     </div>
@@ -2673,9 +2389,7 @@ const Home = () => {
                                 <a href="product-details.html">
                                     <span className="product-name">mAtal8</span>
                                 </a>
-                                <span className="latest-bid">
-                                    Highest bid 1/20
-                                </span>
+                                <span className="latest-bid">Highest bid 1/20</span>
                                 <div className="bid-react-area">
                                     <div className="last-bid">0.244wETH</div>
                                     <div className="react-area">
@@ -2709,14 +2423,11 @@ const Home = () => {
                                 <div className="card-thumbnail">
                                     <a href="product-details.html">
                                         <img
-                                            src={`/assets/images/portfolio/portfolio-05.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-05.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
-                                    <a
-                                        href="product-details.html"
-                                        className="btn btn-primary"
-                                    >
+                                    <a href="product-details.html" className="btn btn-primary">
                                         Place Bid
                                     </a>
                                 </div>
@@ -2728,7 +2439,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-10.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-10.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -2738,7 +2449,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-11.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-11.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -2748,14 +2459,11 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-9.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-9.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
-                                        <a
-                                            className="more-author-text"
-                                            href="#!"
-                                        >
+                                        <a className="more-author-text" href="#!">
                                             12+ Place Bit.
                                         </a>
                                     </div>
@@ -2803,13 +2511,9 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <a href="product-details.html">
-                                    <span className="product-name">
-                                        PlatOrgan
-                                    </span>
+                                    <span className="product-name">PlatOrgan</span>
                                 </a>
-                                <span className="latest-bid">
-                                    Highest bid 1/20
-                                </span>
+                                <span className="latest-bid">Highest bid 1/20</span>
                                 <div className="bid-react-area">
                                     <div className="last-bid">0.244wETH</div>
                                     <div className="react-area">
@@ -2843,14 +2547,11 @@ const Home = () => {
                                 <div className="card-thumbnail">
                                     <a href="product-details.html">
                                         <img
-                                            src={`/assets/images/portfolio/portfolio-06.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-06.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
-                                    <a
-                                        href="product-details.html"
-                                        className="btn btn-primary"
-                                    >
+                                    <a href="product-details.html" className="btn btn-primary">
                                         Place Bid
                                     </a>
                                 </div>
@@ -2862,7 +2563,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-1.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-1.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -2872,7 +2573,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-10.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-10.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -2882,14 +2583,11 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-11.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-11.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
-                                        <a
-                                            className="more-author-text"
-                                            href="#!"
-                                        >
+                                        <a className="more-author-text" href="#!">
                                             5+ Place Bit.
                                         </a>
                                     </div>
@@ -2937,13 +2635,9 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <a href="product-details.html">
-                                    <span className="product-name">
-                                        Orthogon#720
-                                    </span>
+                                    <span className="product-name">Orthogon#720</span>
                                 </a>
-                                <span className="latest-bid">
-                                    Highest bid 1/20
-                                </span>
+                                <span className="latest-bid">Highest bid 1/20</span>
                                 <div className="bid-react-area">
                                     <div className="last-bid">0.244wETH</div>
                                     <div className="react-area">
@@ -2977,14 +2671,11 @@ const Home = () => {
                                 <div className="card-thumbnail">
                                     <a href="product-details.html">
                                         <img
-                                            src={`/assets/images/portfolio/portfolio-07.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-07.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
-                                    <a
-                                        href="product-details.html"
-                                        className="btn btn-primary"
-                                    >
+                                    <a href="product-details.html" className="btn btn-primary">
                                         Place Bid
                                     </a>
                                 </div>
@@ -2996,7 +2687,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-6.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-6.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3006,7 +2697,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-5.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-5.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3016,14 +2707,11 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-10.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-10.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
-                                        <a
-                                            className="more-author-text"
-                                            href="#!"
-                                        >
+                                        <a className="more-author-text" href="#!">
                                             9+ Place Bit.
                                         </a>
                                     </div>
@@ -3071,13 +2759,9 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <a href="product-details.html">
-                                    <span className="product-name">
-                                        Orgajis
-                                    </span>
+                                    <span className="product-name">Orgajis</span>
                                 </a>
-                                <span className="latest-bid">
-                                    Highest bid 1/20
-                                </span>
+                                <span className="latest-bid">Highest bid 1/20</span>
                                 <div className="bid-react-area">
                                     <div className="last-bid">0.244wETH</div>
                                     <div className="react-area">
@@ -3111,14 +2795,11 @@ const Home = () => {
                                 <div className="card-thumbnail">
                                     <a href="product-details.html">
                                         <img
-                                            src={`/assets/images/portfolio/portfolio-05.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-05.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
-                                    <a
-                                        href="product-details.html"
-                                        className="btn btn-primary"
-                                    >
+                                    <a href="product-details.html" className="btn btn-primary">
                                         Place Bid
                                     </a>
                                 </div>
@@ -3130,7 +2811,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-1.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-1.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3140,7 +2821,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-10.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-10.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3150,14 +2831,11 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-11.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-11.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
-                                        <a
-                                            className="more-author-text"
-                                            href="#!"
-                                        >
+                                        <a className="more-author-text" href="#!">
                                             16+ Place Bit.
                                         </a>
                                     </div>
@@ -3205,13 +2883,9 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <a href="product-details.html">
-                                    <span className="product-name">
-                                        Preatent
-                                    </span>
+                                    <span className="product-name">Preatent</span>
                                 </a>
-                                <span className="latest-bid">
-                                    Highest bid 1/20
-                                </span>
+                                <span className="latest-bid">Highest bid 1/20</span>
                                 <div className="bid-react-area">
                                     <div className="last-bid">0.244wETH</div>
                                     <div className="react-area">
@@ -3245,14 +2919,11 @@ const Home = () => {
                                 <div className="card-thumbnail">
                                     <a href="product-details.html">
                                         <img
-                                            src={`/assets/images/portfolio/portfolio-09.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-09.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
-                                    <a
-                                        href="product-details.html"
-                                        className="btn btn-primary"
-                                    >
+                                    <a href="product-details.html" className="btn btn-primary">
                                         Place Bid
                                     </a>
                                 </div>
@@ -3264,7 +2935,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-10.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-10.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3274,7 +2945,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-11.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-11.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3284,14 +2955,11 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-1.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-1.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
-                                        <a
-                                            className="more-author-text"
-                                            href="#!"
-                                        >
+                                        <a className="more-author-text" href="#!">
                                             22+ Place Bit.
                                         </a>
                                     </div>
@@ -3339,13 +3007,9 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <a href="product-details.html">
-                                    <span className="product-name">
-                                        Preatent
-                                    </span>
+                                    <span className="product-name">Preatent</span>
                                 </a>
-                                <span className="latest-bid">
-                                    Highest bid 1/20
-                                </span>
+                                <span className="latest-bid">Highest bid 1/20</span>
                                 <div className="bid-react-area">
                                     <div className="last-bid">0.244wETH</div>
                                     <div className="react-area">
@@ -3379,14 +3043,11 @@ const Home = () => {
                                 <div className="card-thumbnail">
                                     <a href="product-details.html">
                                         <img
-                                            src={`/assets/images/portfolio/portfolio-10.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-10.jpg`}
                                             alt="NFT_portfolio"
                                         />
                                     </a>
-                                    <a
-                                        href="product-details.html"
-                                        className="btn btn-primary"
-                                    >
+                                    <a href="product-details.html" className="btn btn-primary">
                                         Place Bid
                                     </a>
                                 </div>
@@ -3398,7 +3059,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-4.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-4.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3408,7 +3069,7 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-5.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-5.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3418,14 +3079,11 @@ const Home = () => {
                                             data-tooltip="Owener:Mr.Jone-lee"
                                         >
                                             <img
-                                                src={`/assets/images/client/client-8.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-8.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
-                                        <a
-                                            className="more-author-text"
-                                            href="#!"
-                                        >
+                                        <a className="more-author-text" href="#!">
                                             13+ Place Bit.
                                         </a>
                                     </div>
@@ -3473,13 +3131,9 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <a href="product-details.html">
-                                    <span className="product-name">
-                                        Preatent
-                                    </span>
+                                    <span className="product-name">Preatent</span>
                                 </a>
-                                <span className="latest-bid">
-                                    Highest bid 1/20
-                                </span>
+                                <span className="latest-bid">Highest bid 1/20</span>
                                 <div className="bid-react-area">
                                     <div className="last-bid">0.244wETH</div>
                                     <div className="react-area">
@@ -3521,9 +3175,9 @@ const Home = () => {
                             </h3>
                             <select>
                                 <option data-display="1 day"> 1 day</option>
-                                <option value="1">7 Day&sbquo;s</option>
-                                <option value="2">15 Day&sbquo;s</option>
-                                <option value="4">30 Day&sbquo;s</option>
+                                <option value="1">7 Day&rsquo;s</option>
+                                <option value="2">15 Day&rsquo;s</option>
+                                <option value="4">30 Day&rsquo;s</option>
                             </select>
                         </div>
                     </div>
@@ -3540,7 +3194,7 @@ const Home = () => {
                                     <div className="thumbnail varified">
                                         <a href="author.html">
                                             <img
-                                                src={`/assets/images/client/client-12.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-12.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3549,9 +3203,7 @@ const Home = () => {
                                         <a href="author.html">
                                             <h6 className="name">Brodband</h6>
                                         </a>
-                                        <span className="count-number">
-                                            $2500,000
-                                        </span>
+                                        <span className="count-number">$2500,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -3570,20 +3222,16 @@ const Home = () => {
                                     <div className="thumbnail">
                                         <a href="author.html">
                                             <img
-                                                src={`/assets/images/client/client-2.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-2.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
                                     </div>
                                     <div className="top-seller-content">
                                         <a href="author.html">
-                                            <h6 className="name">
-                                                Ms. Parkline
-                                            </h6>
+                                            <h6 className="name">Ms. Parkline</h6>
                                         </a>
-                                        <span className="count-number">
-                                            $2300,000
-                                        </span>
+                                        <span className="count-number">$2300,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -3602,7 +3250,7 @@ const Home = () => {
                                     <div className="thumbnail">
                                         <a href="author.html">
                                             <img
-                                                src={`/assets/images/client/client-3.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-3.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3611,9 +3259,7 @@ const Home = () => {
                                         <a href="author.html">
                                             <h6 className="name">Methods</h6>
                                         </a>
-                                        <span className="count-number">
-                                            $2100,000
-                                        </span>
+                                        <span className="count-number">$2100,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -3632,7 +3278,7 @@ const Home = () => {
                                     <div className="thumbnail varified">
                                         <a href="author.html">
                                             <img
-                                                src={`/assets/images/client/client-4.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-4.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3641,9 +3287,7 @@ const Home = () => {
                                         <a href="author.html">
                                             <h6 className="name">Jone sone</h6>
                                         </a>
-                                        <span className="count-number">
-                                            $2000,000
-                                        </span>
+                                        <span className="count-number">$2000,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -3662,7 +3306,7 @@ const Home = () => {
                                     <div className="thumbnail">
                                         <a href="author.html">
                                             <img
-                                                src={`/assets/images/client/client-5.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-5.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3671,9 +3315,7 @@ const Home = () => {
                                         <a href="author.html">
                                             <h6 className="name">Siddhart</h6>
                                         </a>
-                                        <span className="count-number">
-                                            $200,000
-                                        </span>
+                                        <span className="count-number">$200,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -3692,7 +3334,7 @@ const Home = () => {
                                     <div className="thumbnail varified">
                                         <a href="author.html">
                                             <img
-                                                src={`/assets/images/client/client-6.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-6.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3701,9 +3343,7 @@ const Home = () => {
                                         <a href="author.html">
                                             <h6 className="name">Sobuj Mk</h6>
                                         </a>
-                                        <span className="count-number">
-                                            $2000,000
-                                        </span>
+                                        <span className="count-number">$2000,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -3722,7 +3362,7 @@ const Home = () => {
                                     <div className="thumbnail varified">
                                         <a href="author.html">
                                             <img
-                                                src={`/assets/images/client/client-7.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-7.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3731,9 +3371,7 @@ const Home = () => {
                                         <a href="author.html">
                                             <h6 className="name">Trodband</h6>
                                         </a>
-                                        <span className="count-number">
-                                            $2500,000
-                                        </span>
+                                        <span className="count-number">$2500,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -3752,7 +3390,7 @@ const Home = () => {
                                     <div className="thumbnail">
                                         <a href="author.html">
                                             <img
-                                                src={`/assets/images/client/client-8.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-8.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3761,9 +3399,7 @@ const Home = () => {
                                         <a href="author.html">
                                             <h6 className="name">Yash</h6>
                                         </a>
-                                        <span className="count-number">
-                                            $2500,000
-                                        </span>
+                                        <span className="count-number">$2500,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -3782,7 +3418,7 @@ const Home = () => {
                                     <div className="thumbnail">
                                         <a href="author.html">
                                             <img
-                                                src={`/assets/images/client/client-9.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-9.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3791,9 +3427,7 @@ const Home = () => {
                                         <a href="author.html">
                                             <h6 className="name">YASHKIB</h6>
                                         </a>
-                                        <span className="count-number">
-                                            $2500,000
-                                        </span>
+                                        <span className="count-number">$2500,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -3812,7 +3446,7 @@ const Home = () => {
                                     <div className="thumbnail varified">
                                         <a href="author.html">
                                             <img
-                                                src={`/assets/images/client/client-10.png"
+                                                src={`${process.env.PUBLIC_URL}/images/client/client-10.png`}
                                                 alt="Nft_Profile"
                                             />
                                         </a>
@@ -3821,9 +3455,7 @@ const Home = () => {
                                         <a href="author.html">
                                             <h6 className="name">Brodband</h6>
                                         </a>
-                                        <span className="count-number">
-                                            $2500,000
-                                        </span>
+                                        <span className="count-number">$2500,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -3860,7 +3492,7 @@ const Home = () => {
                                 <div className="inner">
                                     <div className="icon">
                                         <img
-                                            src={`/assets/images/icons/shape-7.png"
+                                            src={`${process.env.PUBLIC_URL}/images/icons/shape-7.png`}
                                             alt="Shape"
                                         />
                                     </div>
@@ -3870,14 +3502,10 @@ const Home = () => {
                                             <a href="#!">Set up your wallet</a>
                                         </h4>
                                         <p className="description">
-                                            Powerful features and inclusions,
-                                            which makes Nuron standout, easily
-                                            customizable and scalable.
+                                            Powerful features and inclusions, which makes Nuron
+                                            standout, easily customizable and scalable.
                                         </p>
-                                        <a
-                                            className="read-more-button"
-                                            href="#!"
-                                        >
+                                        <a className="read-more-button" href="#!">
                                             <i className="feather-arrow-right" />
                                         </a>
                                     </div>
@@ -3899,26 +3527,20 @@ const Home = () => {
                                 <div className="inner">
                                     <div className="icon">
                                         <img
-                                            src={`/assets/images/icons/shape-1.png"
+                                            src={`${process.env.PUBLIC_URL}/images/icons/shape-1.png`}
                                             alt="Shape"
                                         />
                                     </div>
                                     <div className="subtitle">Step-02</div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="#!">
-                                                Create your collection
-                                            </a>
+                                            <a href="#!">Create your collection</a>
                                         </h4>
                                         <p className="description">
-                                            A great collection of beautiful
-                                            website templates for your need.
-                                            Choose the best suitable template.
+                                            A great collection of beautiful website templates for
+                                            your need. Choose the best suitable template.
                                         </p>
-                                        <a
-                                            className="read-more-button"
-                                            href="#!"
-                                        >
+                                        <a className="read-more-button" href="#!">
                                             <i className="feather-arrow-right" />
                                         </a>
                                     </div>
@@ -3940,26 +3562,20 @@ const Home = () => {
                                 <div className="inner">
                                     <div className="icon">
                                         <img
-                                            src={`/assets/images/icons/shape-5.png"
+                                            src={`${process.env.PUBLIC_URL}/images/icons/shape-5.png`}
                                             alt="Shape"
                                         />
                                     </div>
                                     <div className="subtitle">Step-03</div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="#!">
-                                                Add your NFT&sbquo;s
-                                            </a>
+                                            <a href="#!">Add your NFT&rsquo;s</a>
                                         </h4>
                                         <p className="description">
-                                            We&sbquo;ve made the template fully
-                                            responsive, so it looks great on all
-                                            devices: desktop, tablets and.
+                                            We&rsquo;ve made the template fully responsive, so it
+                                            looks great on all devices: desktop, tablets and.
                                         </p>
-                                        <a
-                                            className="read-more-button"
-                                            href="#!"
-                                        >
+                                        <a className="read-more-button" href="#!">
                                             <i className="feather-arrow-right" />
                                         </a>
                                     </div>
@@ -3981,26 +3597,20 @@ const Home = () => {
                                 <div className="inner">
                                     <div className="icon">
                                         <img
-                                            src={`/assets/images/icons/shape-6.png"
+                                            src={`${process.env.PUBLIC_URL}/images/icons/shape-6.png`}
                                             alt="Shape"
                                         />
                                     </div>
                                     <div className="subtitle">Step-04</div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="#!">
-                                                Sell Your NFT&sbquo;s
-                                            </a>
+                                            <a href="#!">Sell Your NFT&rsquo;s</a>
                                         </h4>
                                         <p className="description">
-                                            I throw myself down among the tall
-                                            grass by the stream as I lie close
-                                            to the earth NFT&sbquo;s.
+                                            I throw myself down among the tall grass by the stream
+                                            as I lie close to the earth NFT&rsquo;s.
                                         </p>
-                                        <a
-                                            className="read-more-button"
-                                            href="#!"
-                                        >
+                                        <a className="read-more-button" href="#!">
                                             <i className="feather-arrow-right" />
                                         </a>
                                     </div>
@@ -4052,34 +3662,31 @@ const Home = () => {
                             data-sal-duration="800"
                             className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12"
                         >
-                            <a
-                                href="product-details.html"
-                                className="rn-collection-inner-one"
-                            >
+                            <a href="product-details.html" className="rn-collection-inner-one">
                                 <div className="collection-wrapper">
                                     <div className="collection-big-thumbnail">
                                         <img
-                                            src={`/assets/images/collection/collection-lg-01.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-lg-01.jpg`}
                                             alt="Nft_Profile"
                                         />
                                     </div>
                                     <div className="collenction-small-thumbnail">
                                         <img
-                                            src={`/assets/images/collection/collection-sm-01.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-sm-01.jpg`}
                                             alt="Nft_Profile"
                                         />
                                         <img
-                                            src={`/assets/images/collection/collection-sm-02.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-sm-02.jpg`}
                                             alt="Nft_Profile"
                                         />
                                         <img
-                                            src={`/assets/images/collection/collection-sm-03.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-sm-03.jpg`}
                                             alt="Nft_Profile"
                                         />
                                     </div>
                                     <div className="collection-profile">
                                         <img
-                                            src={`/assets/images/client/client-15.png"
+                                            src={`${process.env.PUBLIC_URL}/images/client/client-15.png`}
                                             alt="Nft_Profile"
                                         />
                                     </div>
@@ -4098,34 +3705,31 @@ const Home = () => {
                             data-sal-duration="800"
                             className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12"
                         >
-                            <a
-                                href="product-details.html"
-                                className="rn-collection-inner-one"
-                            >
+                            <a href="product-details.html" className="rn-collection-inner-one">
                                 <div className="collection-wrapper">
                                     <div className="collection-big-thumbnail">
                                         <img
-                                            src={`/assets/images/collection/collection-lg-02.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-lg-02.jpg`}
                                             alt="Nft_Profile"
                                         />
                                     </div>
                                     <div className="collenction-small-thumbnail">
                                         <img
-                                            src={`/assets/images/collection/collection-sm-04.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-sm-04.jpg`}
                                             alt="Nft_Profile"
                                         />
                                         <img
-                                            src={`/assets/images/collection/collection-sm-05.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-sm-05.jpg`}
                                             alt="Nft_Profile"
                                         />
                                         <img
-                                            src={`/assets/images/collection/collection-sm-06.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-sm-06.jpg`}
                                             alt="Nft_Profile"
                                         />
                                     </div>
                                     <div className="collection-profile">
                                         <img
-                                            src={`/assets/images/client/client-12.png"
+                                            src={`${process.env.PUBLIC_URL}/images/client/client-12.png`}
                                             alt="Nft_Profile"
                                         />
                                     </div>
@@ -4144,34 +3748,31 @@ const Home = () => {
                             data-sal-duration="800"
                             className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12"
                         >
-                            <a
-                                href="product-details.html"
-                                className="rn-collection-inner-one"
-                            >
+                            <a href="product-details.html" className="rn-collection-inner-one">
                                 <div className="collection-wrapper">
                                     <div className="collection-big-thumbnail">
                                         <img
-                                            src={`/assets/images/collection/collection-lg-03.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-lg-03.jpg`}
                                             alt="Nft_Profile"
                                         />
                                     </div>
                                     <div className="collenction-small-thumbnail">
                                         <img
-                                            src={`/assets/images/collection/collection-sm-07.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-sm-07.jpg`}
                                             alt="Nft_Profile"
                                         />
                                         <img
-                                            src={`/assets/images/collection/collection-sm-08.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-sm-08.jpg`}
                                             alt="Nft_Profile"
                                         />
                                         <img
-                                            src={`/assets/images/collection/collection-sm-09.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-sm-09.jpg`}
                                             alt="Nft_Profile"
                                         />
                                     </div>
                                     <div className="collection-profile">
                                         <img
-                                            src={`/assets/images/client/client-13.png"
+                                            src={`${process.env.PUBLIC_URL}/images/client/client-13.png`}
                                             alt="Nft_Profile"
                                         />
                                     </div>
@@ -4190,34 +3791,31 @@ const Home = () => {
                             data-sal-duration="800"
                             className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12"
                         >
-                            <a
-                                href="product-details.html"
-                                className="rn-collection-inner-one"
-                            >
+                            <a href="product-details.html" className="rn-collection-inner-one">
                                 <div className="collection-wrapper">
                                     <div className="collection-big-thumbnail">
                                         <img
-                                            src={`/assets/images/collection/collection-lg-05.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-lg-05.jpg`}
                                             alt="Nft_Profile"
                                         />
                                     </div>
                                     <div className="collenction-small-thumbnail">
                                         <img
-                                            src={`/assets/images/collection/collection-sm-10.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-sm-10.jpg`}
                                             alt="Nft_Profile"
                                         />
                                         <img
-                                            src={`/assets/images/collection/collection-sm-11.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-sm-11.jpg`}
                                             alt="Nft_Profile"
                                         />
                                         <img
-                                            src={`/assets/images/collection/collection-sm-12.jpg"
+                                            src={`${process.env.PUBLIC_URL}/images/collection/collection-sm-12.jpg`}
                                             alt="Nft_Profile"
                                         />
                                     </div>
                                     <div className="collection-profile">
                                         <img
-                                            src={`/assets/images/client/client-14.png"
+                                            src={`${process.env.PUBLIC_URL}/images/client/client-14.png`}
                                             alt="Nft_Profile"
                                         />
                                     </div>
@@ -4318,26 +3916,17 @@ const Home = () => {
                 <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content report-content-wrapper">
                         <div className="modal-header report-modal-header">
-                            <h5 className="modal-title">
-                                Why are you reporting?
-                            </h5>
+                            <h5 className="modal-title">Why are you reporting?</h5>
                         </div>
                         <div className="modal-body">
                             <p>
-                                Describe why you think this item should be
-                                removed from marketplace
+                                Describe why you think this item should be removed from marketplace
                             </p>
                             <div className="report-form-box">
                                 <h6 className="title">Message</h6>
-                                <textarea
-                                    name="message"
-                                    placeholder="Write issues"
-                                />
+                                <textarea name="message" placeholder="Write issues" />
                                 <div className="report-button">
-                                    <button
-                                        type="button"
-                                        className="btn btn-primary mr--10 w-auto"
-                                    >
+                                    <button type="button" className="btn btn-primary mr--10 w-auto">
                                         Report
                                     </button>
                                     <button
@@ -4361,35 +3950,26 @@ const Home = () => {
                             <div className="widget-content-wrapper">
                                 <div className="footer-left">
                                     <div className="logo-thumbnail logo-custom-css">
-                                        <a
-                                            className="logo-light"
-                                            href="index.html"
-                                        >
+                                        <a className="logo-light" href="index.html">
                                             <img
-                                                src={`/assets/images/logo/logo-white.png"
+                                                src={`${process.env.PUBLIC_URL}/images/logo/logo-white.png`}
                                                 alt="nft-logo"
                                             />
                                         </a>
-                                        <a
-                                            className="logo-dark"
-                                            href="index.html"
-                                        >
+                                        <a className="logo-dark" href="index.html">
                                             <img
-                                                src={`/assets/images/logo/logo-dark.png"
+                                                src={`${process.env.PUBLIC_URL}/images/logo/logo-dark.png`}
                                                 alt="nft-logo"
                                             />
                                         </a>
                                     </div>
                                     <p className="rn-footer-describe">
-                                        Created with the collaboration of over
-                                        60 of the world&sbquo;s best Nuron
-                                        Artists.
+                                        Created with the collaboration of over 60 of the
+                                        world&rsquo;s best Nuron Artists.
                                     </p>
                                 </div>
                                 <div className="widget-bottom mt--40 pt--40">
-                                    <h6 className="title">
-                                        Get The Latest Nuron Updates{' '}
-                                    </h6>
+                                    <h6 className="title">Get The Latest Nuron Updates </h6>
                                     <div className="input-group">
                                         <input
                                             type="text"
@@ -4407,9 +3987,7 @@ const Home = () => {
                                         </div>
                                     </div>
                                     <div className="newsletter-dsc">
-                                        <p>
-                                            Email is safe. We don&sbquo;t spam.
-                                        </p>
+                                        <p>Email is safe. We don&rsquo;t spam.</p>
                                     </div>
                                 </div>
                             </div>
@@ -4475,71 +4053,57 @@ const Home = () => {
 
                         <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
                             <div className="footer-widget">
-                                <h6 className="widget-title">
-                                    Recent Sold Out
-                                </h6>
+                                <h6 className="widget-title">Recent Sold Out</h6>
                                 <ul className="footer-recent-post">
                                     <li className="recent-post">
                                         <div className="thumbnail">
                                             <a href="product-details.html">
                                                 <img
-                                                    src={`/assets/images/portfolio/portfolio-01.jpg"
+                                                    src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-01.jpg`}
                                                     alt="Product Images"
                                                 />
                                             </a>
                                         </div>
                                         <div className="content">
                                             <h6 className="title">
-                                                <a href="product-details.html">
-                                                    #21 The Wonder
-                                                </a>
+                                                <a href="product-details.html">#21 The Wonder</a>
                                             </h6>
                                             <p>Highest bid 1/20</p>
-                                            <span className="price">
-                                                0.244wETH
-                                            </span>
+                                            <span className="price">0.244wETH</span>
                                         </div>
                                     </li>
                                     <li className="recent-post">
                                         <div className="thumbnail">
                                             <a href="product-details.html">
                                                 <img
-                                                    src={`/assets/images/portfolio/portfolio-02.jpg"
+                                                    src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-02.jpg`}
                                                     alt="Product Images"
                                                 />
                                             </a>
                                         </div>
                                         <div className="content">
                                             <h6 className="title">
-                                                <a href="product-details.html">
-                                                    Diamond Dog
-                                                </a>
+                                                <a href="product-details.html">Diamond Dog</a>
                                             </h6>
                                             <p>Highest bid 1/20</p>
-                                            <span className="price">
-                                                0.022wETH
-                                            </span>
+                                            <span className="price">0.022wETH</span>
                                         </div>
                                     </li>
                                     <li className="recent-post">
                                         <div className="thumbnail">
                                             <a href="product-details.html">
                                                 <img
-                                                    src={`/assets/images/portfolio/portfolio-03.jpg"
+                                                    src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-03.jpg`}
                                                     alt="Product Images"
                                                 />
                                             </a>
                                         </div>
                                         <div className="content">
                                             <h6 className="title">
-                                                <a href="product-details.html">
-                                                    Morgan11
-                                                </a>
+                                                <a href="product-details.html">Morgan11</a>
                                             </h6>
                                             <p>Highest bid 1/20</p>
-                                            <span className="price">
-                                                0.892wETH
-                                            </span>
+                                            <span className="price">0.892wETH</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -4561,9 +4125,7 @@ const Home = () => {
                                         <a href="terms-condition.html">Terms</a>
                                     </li>
                                     <li>
-                                        <a href="privacy-policy.html">
-                                            Privacy Policy
-                                        </a>
+                                        <a href="privacy-policy.html">Privacy Policy</a>
                                     </li>
                                 </ul>
                             </div>
