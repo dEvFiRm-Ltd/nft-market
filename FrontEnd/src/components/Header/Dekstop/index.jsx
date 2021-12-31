@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './main';
 import './style.css';
 
@@ -9,18 +10,18 @@ const HeaderDekstop = () => {
                 <div className="header-inner">
                     <div className="header-left">
                         <div className="logo-thumbnail logo-custom-css">
-                            <a className="logo-light" href="index.html">
+                            <Link className="logo-light" to="/">
                                 <img
                                     src={`${process.env.PUBLIC_URL}/images/logo/logo-white.png`}
                                     alt="nft-logo"
                                 />{' '}
-                            </a>
-                            <a className="logo-dark" href="index.html">
+                            </Link>
+                            <Link className="logo-dark" to="/">
                                 <img
                                     src={`${process.env.PUBLIC_URL}/images/logo/logo-dark.png`}
                                     alt="nft-logo"
                                 />
-                            </a>
+                            </Link>
                         </div>
                         <div className="mainmenu-wrapper">
                             <nav id="sideNav" className="mainmenu-nav d-none d-xl-block">
