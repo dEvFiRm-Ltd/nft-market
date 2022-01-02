@@ -26,7 +26,7 @@ const About = () => {
                             <div
                                 className="bg_image--13 bg_image"
                                 style={{
-                                    backgroundImage: `${process.env.PUBLIC_URL}/images/bg/bg-image-13.jpg`,
+                                    backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/bg-image-13.jpg)`,
                                 }}
                             />
                         </div>
