@@ -1,17 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const BannerItem = () => {
+const BannerItem = ({ preview, title, minter }) => {
     return (
         <div className="slider-thumbnail thumbnail-overlay">
-            <a href="product-details.html">
+            <Link to="/">
                 <img
-                    src={`${process.env.PUBLIC_URL}/images/banner/banner-04.jpg`}
+                    src={`${process.env.PUBLIC_URL}/images/banner/${preview}`}
                     alt="NFT_portfolio"
                 />
-            </a>
+            </Link>
             <div className="read-wrapper">
-                <h5>Sukanli</h5>
-                <span>Bordcast</span>
+                <h5>{title}</h5>
+                <span>{minter}</span>
             </div>
         </div>
     );

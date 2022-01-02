@@ -68,9 +68,22 @@ const Banner = () => {
                     <div className="col-xl-6 col-lg-6 col-md-12 order-1 order-lg-2">
                         <div className="slider slick-activation-04">
                             <Slider {...slide}>
-                                <BannerItem />
-                                <BannerItem />
-                                <BannerItem />
+                                <BannerItem preview="banner-01.jpg" title="Rizu" minter="Utopia" />
+                                <BannerItem
+                                    preview="banner-02.jpg"
+                                    title="Alem"
+                                    minter="Tech-Team"
+                                />
+                                <BannerItem
+                                    preview="banner-03.jpg"
+                                    title="Maruf"
+                                    minter="Zombies"
+                                />
+                                <BannerItem
+                                    preview="banner-04.jpg"
+                                    title="Mujahid"
+                                    minter="Kaligraphy"
+                                />
                             </Slider>
                         </div>
                     </div>
