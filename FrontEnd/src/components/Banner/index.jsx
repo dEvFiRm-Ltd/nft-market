@@ -1,8 +1,17 @@
 import React from 'react';
+import Slider from 'react-slick';
+import BannerItem from '../Slider/BannerItem';
 import './main';
 import './style.css';
 
 const Banner = () => {
+    const slide = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
     return (
         <div className="banner-style-4 rn-section-gapTop">
             <div className="container">
@@ -58,61 +67,11 @@ const Banner = () => {
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-12 order-1 order-lg-2">
                         <div className="slider slick-activation-04">
-                            <div className="slider-thumbnail thumbnail-overlay">
-                                <a href="product-details.html">
-                                    <img
-                                        src={`${process.env.PUBLIC_URL}/images/banner/banner-04.jpg`}
-                                        alt="NFT_portfolio"
-                                    />
-                                </a>
-                                <div className="read-wrapper">
-                                    <h5>Sukanli</h5>
-                                    <span>Bordcast</span>
-                                </div>
-                            </div>
-
-                            <div className="slider-thumbnail thumbnail-overlay">
-                                <a href="product-details.html">
-                                    <img
-                                        src={`${process.env.PUBLIC_URL}/images/banner/banner-01.jpg`}
-                                        alt="NFT_portfolio"
-                                    />
-                                </a>
-                                <div className="read-wrapper">
-                                    <h5>
-                                        <a href="product-details.html">HasLivbe</a>
-                                    </h5>
-                                    <span>Md. Master</span>
-                                </div>
-                            </div>
-
-                            <div className="slider-thumbnail thumbnail-overlay">
-                                <a href="product-details.html">
-                                    <img
-                                        src={`${process.env.PUBLIC_URL}/images/banner/banner-02.jpg`}
-                                        alt="NFT_portfolio"
-                                    />
-                                </a>
-                                <div className="read-wrapper">
-                                    <h5>
-                                        <a href="product-details.html">Ladicon Mos</a>
-                                    </h5>
-                                    <span>John Lee</span>
-                                </div>
-                            </div>
-
-                            <div className="slider-thumbnail thumbnail-overlay">
-                                <a href="product-details.html">
-                                    <img
-                                        src={`${process.env.PUBLIC_URL}/images/banner/banner-03.jpg`}
-                                        alt="NFT_portfolio"
-                                    />
-                                </a>
-                                <div className="read-wrapper">
-                                    <h5>Masters</h5>
-                                    <span>Keenlee</span>
-                                </div>
-                            </div>
+                            <Slider {...slide}>
+                                <BannerItem />
+                                <BannerItem />
+                                <BannerItem />
+                            </Slider>
                         </div>
                     </div>
                 </div>
