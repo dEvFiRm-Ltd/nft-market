@@ -1,8 +1,27 @@
-import React from 'react';
+import { Slider } from '@mui/material';
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
+import React, { useState } from 'react';
 import './main';
 import './style.css';
 
+function valuetext(value) {
+    return `${value}°C`;
+}
+
 const Product = () => {
+    const [age, setAge] = useState('');
+
+    const ageChange = (event) => {
+        setAge(event.target.value);
+    };
+    const [value, setValue] = React.useState([20, 37]);
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
     return (
         <div className="rn-product-area rn-section-gapTop">
             <div className="container">
@@ -22,13 +41,20 @@ const Product = () => {
                 <div className="default-exp-wrapper">
                     <div className="inner">
                         <div className="filter-select-option">
-                            <label htmlFor="likes" className="filter-leble">
-                                LIKES
-                            </label>
-                            <select id="likes">
-                                <option data-display="Most liked">Most liked</option>
-                                <option value="1">Least liked</option>
-                            </select>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Age</InputLabel>
+                                <Select
+                                    labelId="demo-simple-select-label"
+                                    id="demo-simple-select"
+                                    value={age}
+                                    label="Age"
+                                    onChange={ageChange}
+                                >
+                                    <MenuItem value={10}>Ten</MenuItem>
+                                    <MenuItem value={20}>Twenty</MenuItem>
+                                    <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
                         </div>
                         <div className="filter-select-option">
                             <label className="filter-leble">Category</label>
@@ -64,25 +90,13 @@ const Product = () => {
                         </div>
 
                         <div className="filter-select-option">
-                            <label className="filter-leble">Price Range</label>
-                            <div className="price_filter s-filter clear">
-                                <form action="#" method="GET">
-                                    <div id="slider-range" />
-                                    <div className="slider__range--output">
-                                        <div className="price__output--wrap">
-                                            <div className="price--output">
-                                                <span>Price :</span>
-                                                <input type="text" id="amount" readOnly />
-                                            </div>
-                                            <div className="price--filter">
-                                                <a className="btn btn-primary btn-small" href="#!">
-                                                    Filter
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                            <Slider
+                                getAriaLabel={() => 'Temperature range'}
+                                value={value}
+                                onChange={handleChange}
+                                valueLabelDisplay="auto"
+                                getAriaValueText={valuetext}
+                            />
                         </div>
                     </div>
                 </div>
