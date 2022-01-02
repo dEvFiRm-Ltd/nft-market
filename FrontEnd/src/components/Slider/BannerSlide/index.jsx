@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BannerItem = ({ preview, title, minter }) => {
+const BannerSlide = ({ preview, title, minter }) => {
     return (
         <div className="slider-thumbnail thumbnail-overlay">
             <Link to="/">
@@ -18,4 +18,4 @@ const BannerItem = ({ preview, title, minter }) => {
     );
 };
 
-export default BannerItem;
+export default BannerSlide;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import BannerItem from '../Slider/BannerItem';
+import BannerSlide from '../Slider/BannerSlide';
 import './main';
 import './style.css';
 
@@ -68,18 +68,18 @@ const Banner = () => {
                     <div className="col-xl-6 col-lg-6 col-md-12 order-1 order-lg-2">
                         <div className="slider slick-activation-04">
                             <Slider {...slide}>
-                                <BannerItem preview="banner-01.jpg" title="Rizu" minter="Utopia" />
-                                <BannerItem
+                                <BannerSlide preview="banner-01.jpg" title="Rizu" minter="Utopia" />
+                                <BannerSlide
                                     preview="banner-02.jpg"
                                     title="Alem"
                                     minter="Tech-Team"
                                 />
-                                <BannerItem
+                                <BannerSlide
                                     preview="banner-03.jpg"
                                     title="Maruf"
                                     minter="Zombies"
                                 />
-                                <BannerItem
+                                <BannerSlide
                                     preview="banner-04.jpg"
                                     title="Mujahid"
                                     minter="Kaligraphy"
