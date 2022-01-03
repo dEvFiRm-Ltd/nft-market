@@ -52,12 +52,6 @@ const HeaderDekstop = () => {
                                                 <a href="explore-two.html">Collections</a>
                                             </li>
                                             <li>
-                                                <a href="explore-three.html">
-                                                    Trending
-                                                    <i className="feather-fast-forward" />
-                                                </a>
-                                            </li>
-                                            <li>
                                                 <a href="explore-four.html">
                                                     Live Bidding
                                                     <i className="feather-fast-forward" />
