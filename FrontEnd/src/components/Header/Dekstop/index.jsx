@@ -40,10 +40,30 @@ const HeaderDekstop = () => {
                                     <li>
                                         <Link to="about">About</Link>
                                     </li>
-                                    <li>
-                                        <Link className="its_new" to="/">
+                                    <li className="has-droupdown">
+                                        <a className="nav-link its_new" href="#!">
                                             Explore
-                                        </Link>
+                                        </a>
+                                        <ul className="submenu">
+                                            <li>
+                                                <a href="explore-one.html">Categories</a>
+                                            </li>
+                                            <li>
+                                                <a href="explore-two.html">Collections</a>
+                                            </li>
+                                            <li>
+                                                <a href="explore-three.html">
+                                                    Trending
+                                                    <i className="feather-fast-forward" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="explore-four.html">
+                                                    Live Bidding
+                                                    <i className="feather-fast-forward" />
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <Link to="/">Blog</Link>

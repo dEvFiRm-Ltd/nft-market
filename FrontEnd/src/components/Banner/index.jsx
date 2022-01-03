@@ -9,7 +9,8 @@ const Banner = () => {
         dots: true,
         infinite: true,
         arrows: false,
-        speed: 500,
+        autoplay: true,
+        autoplayspeed: 5000,
         slidesToShow: 1,
         slidesToScroll: 1,
     };
@@ -19,14 +20,6 @@ const Banner = () => {
                 <div className="row align-items-center">
                     <div className="col-xl-6 col-lg-6 col-md-12 order-2 order-lg-1 mt_md--40 mt_sm--40">
                         <div className="sldier-content">
-                            <span
-                                className="title-badge"
-                                data-sal="slide-up"
-                                data-sal-delay="150"
-                                data-sal-duration="800"
-                            >
-                                Nuron Marketplace
-                            </span>
                             <h2
                                 className="title"
                                 data-sal="slide-up"

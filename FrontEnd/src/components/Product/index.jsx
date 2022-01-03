@@ -1,26 +1,19 @@
 import { Slider } from '@mui/material';
-import FormControl from '@mui/material/FormControl';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
-import React, { useState } from 'react';
+import React from 'react';
+import { Form } from 'react-bootstrap';
 import './main';
 import './style.css';
 
 function valuetext(value) {
-    return `${value}°C`;
+    return value;
 }
 
 const Product = () => {
-    const [age, setAge] = useState('');
-
-    const ageChange = (event) => {
-        setAge(event.target.value);
-    };
     const [value, setValue] = React.useState([20, 37]);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
+        console.log(value);
     };
     return (
         <div className="rn-product-area rn-section-gapTop">
@@ -41,62 +34,55 @@ const Product = () => {
                 <div className="default-exp-wrapper">
                     <div className="inner">
                         <div className="filter-select-option">
-                            <FormControl fullWidth>
-                                <InputLabel id="demo-simple-select-label">Age</InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    value={age}
-                                    label="Age"
-                                    onChange={ageChange}
-                                >
-                                    <MenuItem value={10}>Ten</MenuItem>
-                                    <MenuItem value={20}>Twenty</MenuItem>
-                                    <MenuItem value={30}>Thirty</MenuItem>
-                                </Select>
-                            </FormControl>
+                            <label className="filter-leble">Likes</label>
+                            <Form.Select size="lg" aria-label="Likes">
+                                <option>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </Form.Select>
                         </div>
                         <div className="filter-select-option">
                             <label className="filter-leble">Category</label>
-                            <select>
-                                <option data-display="Category">Category</option>
-                                <option value="1">Art</option>
-                                <option value="1">Photograph</option>
-                                <option value="2">Metaverses</option>
-                                <option value="4">Potato</option>
-                                <option value="4">Photos</option>
-                            </select>
+                            <Form.Select size="lg" aria-label="Category">
+                                <option>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </Form.Select>
                         </div>
 
                         <div className="filter-select-option">
                             <label className="filter-leble">Collections</label>
-                            <select>
-                                <option data-display="Collections">Collections</option>
-                                <option value="1">BoredApeYachtClub</option>
-                                <option value="2">MutantApeYachtClub</option>
-                                <option value="4">Art Blocks Factory</option>
-                            </select>
+                            <Form.Select size="lg" aria-label="Collections">
+                                <option>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </Form.Select>
                         </div>
 
                         <div className="filter-select-option">
                             <label className="filter-leble">Sale type</label>
-                            <select>
-                                <option data-display="Sale type">Sale type</option>
-                                <option value="1">Fixed price</option>
-                                <option value="2">Timed auction</option>
-                                <option value="4">Not for sale</option>
-                                <option value="4">Open for offers</option>
-                            </select>
+                            <Form.Select size="lg" aria-label="Types">
+                                <option>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </Form.Select>
                         </div>
 
                         <div className="filter-select-option">
+                            <label className="filter-leble">Price Range</label>
                             <Slider
-                                getAriaLabel={() => 'Temperature range'}
+                                getAriaLabel={() => 'Price Range'}
                                 value={value}
                                 onChange={handleChange}
                                 valueLabelDisplay="auto"
                                 getAriaValueText={valuetext}
                             />
+                            <span>Min: {value[0]} </span>
+                            <span>Max: {value[1]}</span>
                         </div>
                     </div>
                 </div>

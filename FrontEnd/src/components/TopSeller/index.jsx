@@ -1,4 +1,5 @@
 import React from 'react';
+import { Form } from 'react-bootstrap';
 import './main';
 import './style.css';
 
@@ -16,12 +17,12 @@ const TopSeller = () => {
                         >
                             Top Seller in
                         </h3>
-                        <select>
-                            <option data-display="1 day"> 1 day</option>
-                            <option value="1">7 Day&rsquo;s</option>
-                            <option value="2">15 Day&rsquo;s</option>
-                            <option value="4">30 Day&rsquo;s</option>
-                        </select>
+                        <Form.Select style={{ width: '14%' }} size="lg" aria-label="Top Seller">
+                            <option>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </Form.Select>
                     </div>
                 </div>
                 <div className="row justify-sm-center g-5 top-seller-list-wrapper">

@@ -10869,10 +10869,6 @@ body.sal-disabled [data-sal|='fade'] {
     transition-property: opacity, transform;
 }
 
-[data-sal='slide-up'] {
-    transform: translateY(20%);
-}
-
 [data-sal='slide-down'] {
     transform: translateY(-20%);
 }
