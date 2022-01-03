@@ -32,6 +32,69 @@ const CreateNft = () => {
             console.log('Error uploading file: ', e)
         }
     }
+
+     //1. create item (image/video) and upload to ipfs
+     async function createItem(){
+        const {name, description, price} = formInput; //get the value from the form input
+        
+        //form validation
+        if(!name || !description || !price || !fileUrl) {
+            console.log('Please fill in all the fields');
+        }
+
+        const data = JSON.stringify({
+            name, description, image: fileUrl
+        });
+
+        try{
+            const added = await client.add(data)
+            const url = `https://ipfs.infura.io/ipfs/${added.path}`
+            //pass the url to sav eit on Polygon adter it has been uploaded to IPFS
+            createSale(url)
+        }catch(error){
+            console.log(`Error uploading file: `, error)
+        }
+    }
+
+    //2. List item for sale
+    async function createSale(url){
+        const web3Modal = new Web3Modal();
+        const connection = await web3Modal.connect();
+        const provider = new ethers.providers.Web3Provider(connection);
+
+        //sign the transaction
+        const signer = provider.getSigner();
+        let contract = new ethers.Contract(nftaddress, NFT.abi, signer);
+        let transaction = await contract.createToken(url);
+        let tx = await transaction.wait()
+
+        //get the tokenId from the transaction that occured above
+        //there events array that is returned, the first item from that event
+        //is the event, third item is the token id.
+        console.log('Transaction: ',tx)
+        console.log('Transaction events: ',tx.events[0])
+        let event = tx.events[0]
+        let value = event.args[2]
+        let tokenId = value.toNumber() //we need to convert it a number
+
+        //get a reference to the price entered in the form 
+        const price = ethers.utils.parseUnits(formInput.price, 'ether')
+
+        contract = new ethers.Contract(nftmarketaddress, Market.abi, signer);
+
+        //get the listing price
+        let listingPrice = await contract.getListingPrice()
+        listingPrice = listingPrice.toString()
+
+        transaction = await contract.createMarketItem(
+            nftaddress, tokenId, price, {value: listingPrice }
+        )
+
+        await transaction.wait()
+
+        // router.push('/')
+
+    }
     return (
         <div className="create-area rn-section-gapTop">
             <div className="container">
@@ -94,7 +157,7 @@ const CreateNft = () => {
 
                     <div className="col-lg-7">
                         <div className="form-wrapper-one">
-                            <form className="row" action="#">
+                            <div className="row" >
                                 <div className="col-md-12">
                                     <div className="input-box pb--20">
                                         <label htmlFor="name" className="form-label">
@@ -103,6 +166,7 @@ const CreateNft = () => {
                                         <input
                                             id="name"
                                             placeholder="e. g. `Digital Awesome Game`"
+                                            onChange={e => updateFormInput({...formInput, name: e.target.value})}
                                         />
                                     </div>
                                 </div>
@@ -116,6 +180,7 @@ const CreateNft = () => {
                                             id="Discription"
                                             rows="3"
                                             placeholder="e. g. “After purchasing the product you can get item...”"
+                                            onChange={e => updateFormInput({...formInput, description: e.target.value})}
                                         />
                                     </div>
                                 </div>
@@ -125,7 +190,8 @@ const CreateNft = () => {
                                         <label htmlFor="dollerValue" className="form-label">
                                             Item Price in $
                                         </label>
-                                        <input id="dollerValue" placeholder="e. g. `20$`" />
+                                        <input id="dollerValue" placeholder="e. g. `20$`" 
+                                        onChange={e => updateFormInput({...formInput, price: e.target.value})}/>
                                     </div>
                                 </div>
 
@@ -219,12 +285,13 @@ const CreateNft = () => {
                                         <button
                                             type="submit"
                                             className="btn btn-primary btn-large w-100"
+                                            onClick ={createItem}
                                         >
                                             Submit Item
                                         </button>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
 
