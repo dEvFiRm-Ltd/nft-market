@@ -4,10 +4,6 @@ import Single from '../Single-Nft';
 import './main';
 import './style.css';
 
-function valuetext(value) {
-  return value;
-}
-
 const Product = () => {
   return (
     <div className='rn-product-area rn-section-gapTop'>
