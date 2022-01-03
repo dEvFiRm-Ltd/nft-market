@@ -1,4 +1,3 @@
-import { Slider } from '@mui/material';
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import Single from '../Single-Nft';
@@ -6,12 +5,6 @@ import './main';
 import './style.css';
 
 const Product = () => {
-  const [value, setValue] = React.useState([20, 37]);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-    console.log(value);
-  };
   return (
     <div className='rn-product-area rn-section-gapTop'>
       <div className='container'>
