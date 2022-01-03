@@ -1,4 +1,3 @@
-import { Slider } from '@mui/material';
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import Single from '../Single-Nft';
@@ -10,12 +9,6 @@ function valuetext(value) {
 }
 
 const Product = () => {
-  const [value, setValue] = React.useState([20, 37]);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-    console.log(value);
-  };
   return (
     <div className='rn-product-area rn-section-gapTop'>
       <div className='container'>
@@ -71,19 +64,6 @@ const Product = () => {
                 <option value='2'>Two</option>
                 <option value='3'>Three</option>
               </Form.Select>
-            </div>
-
-            <div className='filter-select-option'>
-              <label className='filter-leble'>Price Range</label>
-              <Slider
-                getAriaLabel={() => 'Price Range'}
-                value={value}
-                onChange={handleChange}
-                valueLabelDisplay='auto'
-                getAriaValueText={valuetext}
-              />
-              <span>Min: {value[0]} </span>
-              <span>Max: {value[1]}</span>
             </div>
           </div>
         </div>
