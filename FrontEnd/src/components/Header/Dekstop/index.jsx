@@ -123,9 +123,9 @@ const HeaderDekstop = () => {
 
                         <div className="setting-option header-btn">
                             <div className="icon-box">
-                                <a className="btn btn-primary-alta btn-small" href="create.html">
+                                <Link className="btn btn-primary-alta btn-small" to="upload">
                                     Create
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="setting-option rn-icon-list user-account">
