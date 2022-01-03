@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Collection from './components/Collection';
 import Pages from './components/pages';
 import About from './components/pages/About';
 import AllProducts from './components/pages/All-Nft';
@@ -23,6 +24,7 @@ const App = () => {
           <Route path='create' element={<CreateNft />} />
           <Route path='upload' element={<Upload />} />
           <Route path='category' element={<Category />} />
+          <Route path='collection' element={<Collection />} />
         </Route>
       </Routes>
     </BrowserRouter>

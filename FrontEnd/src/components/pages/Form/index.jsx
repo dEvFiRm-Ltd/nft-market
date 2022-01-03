@@ -1,17 +1,14 @@
-import React, { useState } from 'react'
-import { ethers } from 'ethers'
-import { create as ipfsHttpClient } from 'ipfs-http-client'
-import { useRouter } from 'react-router-dom'
-import Web3Modal from 'web3modal'
+import React, { useState } from 'react';
+import { ethers } from 'ethers';
+import { create as ipfsHttpClient } from 'ipfs-http-client';
+import { useRouter } from 'react-router-dom';
+import Web3Modal from 'web3modal';
 
 const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0');
 
-import {
-    nftaddress, nftmarketaddress
-} from '../../../Backend/config';
+import { nftaddress, nftmarketaddress } from '../../../Backend/config';
 import NFT from '../../../Backend/artifacts/contracts/NFT.sol/NFT.json';
 import Market from '../../../Backend/artifacts/contracts/NFTMarket.sol/NFTMarket.json';
-
 const CreateNft = () => {
     const [fileUrl, setFileUrl] = useState(null)
     const [formInput, updateFormInput] = useState({ price: '', name: '', description: '' })
@@ -33,12 +30,12 @@ const CreateNft = () => {
         }
     }
 
-     //1. create item (image/video) and upload to ipfs
-     async function createItem(){
-        const {name, description, price} = formInput; //get the value from the form input
-        
+    //1. create item (image/video) and upload to ipfs
+    async function createItem() {
+        const { name, description, price } = formInput; //get the value from the form input
+
         //form validation
-        if(!name || !description || !price || !fileUrl) {
+        if (!name || !description || !price || !fileUrl) {
             console.log('Please fill in all the fields');
         }
 
@@ -46,18 +43,18 @@ const CreateNft = () => {
             name, description, image: fileUrl
         });
 
-        try{
+        try {
             const added = await client.add(data)
             const url = `https://ipfs.infura.io/ipfs/${added.path}`
             //pass the url to sav eit on Polygon adter it has been uploaded to IPFS
             createSale(url)
-        }catch(error){
+        } catch (error) {
             console.log(`Error uploading file: `, error)
         }
     }
 
     //2. List item for sale
-    async function createSale(url){
+    async function createSale(url) {
         const web3Modal = new Web3Modal();
         const connection = await web3Modal.connect();
         const provider = new ethers.providers.Web3Provider(connection);
@@ -71,8 +68,8 @@ const CreateNft = () => {
         //get the tokenId from the transaction that occured above
         //there events array that is returned, the first item from that event
         //is the event, third item is the token id.
-        console.log('Transaction: ',tx)
-        console.log('Transaction events: ',tx.events[0])
+        console.log('Transaction: ', tx)
+        console.log('Transaction events: ', tx.events[0])
         let event = tx.events[0]
         let value = event.args[2]
         let tokenId = value.toNumber() //we need to convert it a number
@@ -87,7 +84,7 @@ const CreateNft = () => {
         listingPrice = listingPrice.toString()
 
         transaction = await contract.createMarketItem(
-            nftaddress, tokenId, price, {value: listingPrice }
+            nftaddress, tokenId, price, { value: listingPrice }
         )
 
         await transaction.wait()
@@ -110,7 +107,7 @@ const CreateNft = () => {
                             <div className="brows-file-wrapper">
                                 {/* actual upload which is hidden */}
                                 {!fileUrl ?
-                                    <input
+                                    <> <input
                                         name="file"
                                         id="file"
                                         type="file"
@@ -118,7 +115,13 @@ const CreateNft = () => {
                                         data-multiple-caption="{count} files selected"
                                         multiple
                                         onChange={onChange}
-                                    />
+                                    /><label htmlFor="file" title="No File Choosen">
+                                            <i className="feather-upload" />
+                                            <span className="text-center">Choose a File</span>
+                                            <p className="text-center mt--10">
+                                                PNG, GIF, WEBP, MP4 or MP3. <br /> Max 1Gb.
+                                            </p>
+                                        </label></>
                                     :
                                     <img
                                         src={fileUrl}
@@ -130,13 +133,7 @@ const CreateNft = () => {
 
                                 }
                                 {/* our custom upload button */}
-                                <label htmlFor="file" title="No File Choosen">
-                                    <i className="feather-upload" />
-                                    <span className="text-center">Choose a File</span>
-                                    <p className="text-center mt--10">
-                                        PNG, GIF, WEBP, MP4 or MP3. <br /> Max 1Gb.
-                                    </p>
-                                </label>
+
                             </div>
                         </div>
                         {/* end upoad file area */}
@@ -166,7 +163,7 @@ const CreateNft = () => {
                                         <input
                                             id="name"
                                             placeholder="e. g. `Digital Awesome Game`"
-                                            onChange={e => updateFormInput({...formInput, name: e.target.value})}
+                                            onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
                                         />
                                     </div>
                                 </div>
@@ -180,7 +177,7 @@ const CreateNft = () => {
                                             id="Discription"
                                             rows="3"
                                             placeholder="e. g. “After purchasing the product you can get item...”"
-                                            onChange={e => updateFormInput({...formInput, description: e.target.value})}
+                                            onChange={e => updateFormInput({ ...formInput, description: e.target.value })}
                                         />
                                     </div>
                                 </div>
@@ -190,8 +187,8 @@ const CreateNft = () => {
                                         <label htmlFor="dollerValue" className="form-label">
                                             Item Price in $
                                         </label>
-                                        <input id="dollerValue" placeholder="e. g. `20$`" 
-                                        onChange={e => updateFormInput({...formInput, price: e.target.value})}/>
+                                        <input id="dollerValue" placeholder="e. g. `20$`"
+                                            onChange={e => updateFormInput({ ...formInput, price: e.target.value })} />
                                     </div>
                                 </div>
 
@@ -285,7 +282,7 @@ const CreateNft = () => {
                                         <button
                                             type="submit"
                                             className="btn btn-primary btn-large w-100"
-                                            onClick ={createItem}
+                                            onClick={createItem}
                                         >
                                             Submit Item
                                         </button>

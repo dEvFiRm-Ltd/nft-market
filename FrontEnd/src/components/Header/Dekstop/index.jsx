@@ -49,7 +49,7 @@ const HeaderDekstop = () => {
                         <Link to='category'>Categories</Link>
                       </li>
                       <li>
-                        <a href='collection'>Collections</a>
+                        <Link to='collection'>Collections</Link>
                       </li>
                       <li>
                         <a href='explore-four.html'>
