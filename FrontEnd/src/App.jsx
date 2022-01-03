@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Pages from './components/pages';
 import About from './components/pages/About';
+import AllProducts from './components/pages/AllProducts';
 import Home from './components/pages/Home';
 import Wallet from './components/Wallet';
 
@@ -12,6 +13,7 @@ const App = () => {
                 <Route path="/" exact element={<Pages />}>
                     <Route index element={<Home />} />
                     <Route path="about" element={<About />} />
+                    <Route path="products" element={<AllProducts />} />
                     <Route path="wallet" element={<Wallet />} />
                 </Route>
             </Routes>

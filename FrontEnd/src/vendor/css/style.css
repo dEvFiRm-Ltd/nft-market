@@ -18856,7 +18856,11 @@ tbody.ranking tr td .thumbnail img {
     background: var(--color-white);
 }
 .active-light-mode .wallet-wrapper::before {
-    background: var(--gradient-one);
+    background: linear-gradient(
+        267.54deg,
+        rgb(255, 220, 36) 1.63%,
+        rgb(255, 92, 0) 98.05%
+    );
 }
 .active-light-mode .wallet-wrapper:hover::before {
     opacity: 1;
