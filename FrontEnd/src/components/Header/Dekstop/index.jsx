@@ -196,7 +196,7 @@ const HeaderDekstop = () => {
                                             <a href="author.html">Edit Profile</a>
                                         </li>
                                         <li>
-                                            <a href="connect.html">Manage funds</a>
+                                            <Link to="wallet">Wallet</Link>
                                         </li>
                                         <li>
                                             <a href="login.html">Sign Out</a>
