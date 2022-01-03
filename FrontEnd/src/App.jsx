@@ -11,22 +11,22 @@ import Upload from './components/pages/Upload';
 import Wallet from './components/Wallet';
 
 const App = () => {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" exact element={<Pages />}>
-                    <Route index element={<Home />} />
-                    <Route path="about" element={<About />} />
-                    <Route path="products" element={<AllProducts />} />
-                    <Route path="wallet" element={<Wallet />} />
-                    <Route path="details" element={<SingleProduct />} />
-                    <Route path="create" element={<CreateNft />} />
-                    <Route path="upload" element={<Upload />} />
-                    <Route path="category" element={<Category />} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' exact element={<Pages />}>
+          <Route index element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='products' element={<AllProducts />} />
+          <Route path='wallet' element={<Wallet />} />
+          <Route path='details' element={<SingleProduct />} />
+          <Route path='create' element={<CreateNft />} />
+          <Route path='upload' element={<Upload />} />
+          <Route path='category' element={<Category />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;
