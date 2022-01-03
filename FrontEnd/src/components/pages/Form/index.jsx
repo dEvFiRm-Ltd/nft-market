@@ -1,7 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { ethers } from 'ethers'
+import { create as ipfsHttpClient } from 'ipfs-http-client'
+import { useRouter } from 'react-router-dom'
+import Web3Modal from 'web3modal'
 
+const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0');
+
+import {
+    nftaddress, nftmarketaddress
+} from '../../../Backend/config';
+import NFT from '../../../Backend/artifacts/contracts/NFT.sol/NFT.json';
+import Market from '../../../Backend/artifacts/contracts/NFTMarket.sol/NFTMarket.json';
 
 const CreateNft = () => {
+    const [fileUrl, setFileUrl] = useState(null)
+    const [formInput, updateFormInput] = useState({ price: '', name: '', description: '' })
+    // const router = useRouter();
+    async function onChange(e) {
+        const file = e.target.files[0]
+        try { //try uploading the file
+            const added = await client.add(
+                file,
+                {
+                    progress: (prog) => console.log(`received: ${prog}`)
+                }
+            )
+            //file saved in the url path below
+            const url = `https://ipfs.infura.io/ipfs/${added.path}`
+            setFileUrl(url)
+        } catch (e) {
+            console.log('Error uploading file: ', e)
+        }
+    }
     return (
         <div className="create-area rn-section-gapTop">
             <div className="container">
@@ -16,14 +46,26 @@ const CreateNft = () => {
 
                             <div className="brows-file-wrapper">
                                 {/* actual upload which is hidden */}
-                                <input
-                                    name="file"
-                                    id="file"
-                                    type="file"
-                                    className="inputfile"
-                                    data-multiple-caption="{count} files selected"
-                                    multiple
-                                />
+                                {!fileUrl ?
+                                    <input
+                                        name="file"
+                                        id="file"
+                                        type="file"
+                                        className="inputfile"
+                                        data-multiple-caption="{count} files selected"
+                                        multiple
+                                        onChange={onChange}
+                                    />
+                                    :
+                                    <img
+                                        src={fileUrl}
+                                        alt="Picture of the NFT"
+                                        className="img-fluid"
+                                        width={350}
+                                        height={500}
+                                    />
+
+                                }
                                 {/* our custom upload button */}
                                 <label htmlFor="file" title="No File Choosen">
                                     <i className="feather-upload" />
