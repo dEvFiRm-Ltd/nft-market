@@ -16540,9 +16540,6 @@ button .small-image {
 .product-tab-wrapper {
     position: sticky;
 }
-.product-tab-wrapper .pd-tab-inner {
-    display: flex;
-}
 .product-tab-wrapper .rn-pd-nav {
     max-width: 100%;
     display: flex;

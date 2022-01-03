@@ -199,6 +199,9 @@ const HeaderDekstop = () => {
                                             <Link to="wallet">Wallet</Link>
                                         </li>
                                         <li>
+                                            <Link to="SingleProduct">Single Product</Link>
+                                        </li>
+                                        <li>
                                             <a href="login.html">Sign Out</a>
                                         </li>
                                     </ul>
