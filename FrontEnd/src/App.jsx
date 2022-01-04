@@ -5,7 +5,8 @@ import Pages from './components/pages';
 import About from './components/pages/About';
 import AllProducts from './components/pages/All-Nft';
 import Category from './components/pages/Category';
-import CreateNft from './components/pages/Form';
+import CreateNft from './components/pages/Create-Nft';
+import EditProfile from './components/pages/Edit-Profile';
 import Home from './components/pages/Home';
 import Profile from './components/pages/Profile';
 import SingleProduct from './components/pages/Single-Nft';
@@ -27,6 +28,7 @@ const App = () => {
           <Route path='category' element={<Category />} />
           <Route path='collection' element={<Collection />} />
           <Route path='profile' element={<Profile />} />
+          <Route path='edit-profile' element={<EditProfile />} />
         </Route>
       </Routes>
     </BrowserRouter>

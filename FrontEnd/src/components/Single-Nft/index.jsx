@@ -19,13 +19,16 @@ const Single = ({ nft }) => {
   //   seller,
   //   tokenId);
   return (
-    <div className='product-style-one no-overlay'>
+    <div className='product-style-one no-overlay with-placeBid'>
       <div className='card-thumbnail'>
         <a href='product-details.html'>
           <img
             src={image}
             alt='NFT_portfolio'
           />
+        </a>
+        <a href='product-details.html' className='btn btn-primary'>
+          Place Bid
         </a>
       </div>
       <div className='product-share-wrapper'>
