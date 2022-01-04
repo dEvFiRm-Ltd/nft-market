@@ -91,19 +91,6 @@ const HeaderDekstop = () => {
                   <i className='feather-search' />
                 </button>
               </div>
-              <form
-                id='header-search-1'
-                action='#'
-                method='GET'
-                className='large-mobile-blog-search'
-              >
-                <div className='rn-search-mobile form-group'>
-                  <button type='submit' className='search-button'>
-                    <i className='feather-search' />
-                  </button>
-                  <input type='text' placeholder='Search ...' />
-                </div>
-              </form>
             </div>
 
             <div className='setting-option rn-icon-list notification-badge'>
@@ -184,7 +171,7 @@ const HeaderDekstop = () => {
                   </div>
                   <ul className='list-inner'>
                     <li>
-                      <a href='author.html'>My Profile</a>
+                      <Link to='profile'>My Profile</Link>
                     </li>
                     <li>
                       <a href='author.html'>Edit Profile</a>
@@ -193,7 +180,7 @@ const HeaderDekstop = () => {
                       <Link to='wallet'>Wallet</Link>
                     </li>
                     <li>
-                      <Link to='SingleProduct'>Single Product</Link>
+                      <Link to='details'>Single Product</Link>
                     </li>
                     <li>
                       <a href='login.html'>Sign Out</a>
