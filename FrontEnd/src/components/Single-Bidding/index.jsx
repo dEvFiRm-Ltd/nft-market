@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './main';
 import './style.css';
 
 const SingleBidding = ({ img, duration, bidders, title, likes }) => {
+  const ending = new Date('Jan 5, 2022 15:37:25').getTime();
+  let current = new Date().getTime();
+  let days, hours, minutes, seconds;
+  const counter = () => {
+    let timer = ending - current;
+    days = Math.floor(timer / (1000 * 60 * 60 * 24));
+    hours = Math.floor((timer % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    minutes = Math.floor((timer % (1000 * 60 * 60)) / (1000 * 60));
+    seconds = Math.floor((timer % (1000 * 60)) / 1000);
+  };
+  const [timeLeft, setTimeLeft] = useState(counter());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(counter());
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [timeLeft]);
+
   return (
     <div className='single-slide-product'>
       <div className='product-style-one'>
@@ -13,21 +33,21 @@ const SingleBidding = ({ img, duration, bidders, title, likes }) => {
               alt='NFT_portfolio'
             />
           </a>
-          <div className='countdown' data-date='2022-10-09'>
+          <div className='countdown'>
             <div className='countdown-container days'>
-              <span className='countdown-value'>87</span>
+              <span className='countdown-value'>{days}</span>
               <span className='countdown-heading'>Day&rsquo;s</span>
             </div>
             <div className='countdown-container hours'>
-              <span className='countdown-value'>23</span>
+              <span className='countdown-value'>{hours}</span>
               <span className='countdown-heading'>Hour&rsquo;s</span>
             </div>
             <div className='countdown-container minutes'>
-              <span className='countdown-value'>38</span>
+              <span className='countdown-value'>{minutes}</span>
               <span className='countdown-heading'>Min&rsquo;s</span>
             </div>
             <div className='countdown-container seconds'>
-              <span className='countdown-value'>27</span>
+              <span className='countdown-value'>{seconds}</span>
               <span className='countdown-heading'>Sec&rsquo;s</span>
             </div>
           </div>
