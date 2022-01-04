@@ -4,13 +4,16 @@ import './style.css';
 
 const Single = () => {
   return (
-    <div className='product-style-one no-overlay'>
+    <div className='product-style-one no-overlay with-placeBid'>
       <div className='card-thumbnail'>
         <a href='product-details.html'>
           <img
             src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-01.jpg`}
             alt='NFT_portfolio'
           />
+        </a>
+        <a href='product-details.html' className='btn btn-primary'>
+          Place Bid
         </a>
       </div>
       <div className='product-share-wrapper'>

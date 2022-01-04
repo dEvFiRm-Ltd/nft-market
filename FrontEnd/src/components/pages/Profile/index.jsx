@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../../Banner';
+import Single from '../../Single-Nft';
 
 function Profile() {
   return (
@@ -189,6 +190,7 @@ function Profile() {
                     </div>
                   </div>
                 </div>
+                <Single />
               </div>
             </div>
             <div

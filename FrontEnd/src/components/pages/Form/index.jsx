@@ -208,7 +208,7 @@ const CreateNft = () => {
                 <div className='col-md-4'>
                   <div className='input-box pb--20'>
                     <label htmlFor='dollerValue' className='form-label'>
-                      Item Price in $
+                      Item Price in (ETH)
                     </label>
                     <input
                       id='dollerValue'
@@ -241,9 +241,9 @@ const CreateNft = () => {
                 <div className='col-md-12'>
                   <div className='input-box pb--20'>
                     <label htmlFor='Royality' className='form-label'>
-                      Royality
+                      Royality (in %)
                     </label>
-                    <input id='Royality' placeholder='e. g. `20%`' />
+                    <input id='Royality' placeholder='e. g. `2.5, 3; Max 5`' />
                   </div>
                 </div>
 
