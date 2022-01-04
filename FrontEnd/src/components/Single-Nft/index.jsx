@@ -2,13 +2,28 @@ import React from 'react';
 import './main';
 import './style.css';
 
-const Single = () => {
+const Single = ({ nft }) => {
+  const { 
+    description,
+    image,
+    name,
+    owner,
+    price,
+    seller,
+    tokenId } = nft;
+  // console.log(description,
+  //   image,
+  //   name,
+  //   owner,
+  //   price,
+  //   seller,
+  //   tokenId);
   return (
     <div className='product-style-one no-overlay'>
       <div className='card-thumbnail'>
         <a href='product-details.html'>
           <img
-            src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-01.jpg`}
+            src={image}
             alt='NFT_portfolio'
           />
         </a>
@@ -81,11 +96,11 @@ const Single = () => {
         </div>
       </div>
       <a href='product-details.html'>
-        <span className='product-name'>Preatent</span>
+        <span className='product-name'>{name}</span>
       </a>
       <span className='latest-bid'>Highest bid 1/20</span>
       <div className='bid-react-area'>
-        <div className='last-bid'>0.244wETH</div>
+        <div className='last-bid'>{price}wETH</div>
         <div className='react-area'>
           <svg
             viewBox='0 0 17 16'

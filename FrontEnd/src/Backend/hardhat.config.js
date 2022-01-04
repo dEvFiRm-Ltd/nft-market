@@ -19,11 +19,15 @@ module.exports = {
         // mainnet: {
         //   url:`https://mainnet.infura.io/v3/${projectId}`,
         //   accounts:[keyData]
-        // }
+        // },
         rinkeby: {
             url: 'https://rinkeby.infura.io/v3/7f8851cb0d8d4559b402a52ea3370cd7',
             accounts: [keyData],
         },
+        // ropsten: {
+        //     url: 'https://ropsten.infura.io/v3/7f8851cb0d8d4559b402a52ea3370cd7',
+        //     accounts: [keyData],
+        // },
     },
     solidity: {
         version: '0.8.4',
