@@ -23,6 +23,8 @@ module.exports = {
         rinkeby: {
             url: 'https://rinkeby.infura.io/v3/7f8851cb0d8d4559b402a52ea3370cd7',
             accounts: [keyData],
+           
+            gasPrice: 8000000000
         },
         // ropsten: {
         //     url: 'https://ropsten.infura.io/v3/7f8851cb0d8d4559b402a52ea3370cd7',

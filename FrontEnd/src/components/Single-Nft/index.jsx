@@ -2,7 +2,7 @@ import React from 'react';
 import './main';
 import './style.css';
 
-const Single = ({ nft }) => {
+const Single = ({ nft,buyNFT }) => {
   const { 
     description,
     image,
@@ -27,7 +27,8 @@ const Single = ({ nft }) => {
             alt='NFT_portfolio'
           />
         </a>
-        <a href='product-details.html' className='btn btn-primary'>
+        <a href='#' className='btn btn-primary'>
+         
           Place Bid
         </a>
       </div>
@@ -121,6 +122,7 @@ const Single = ({ nft }) => {
           <span className='number'>322</span>
         </div>
       </div>
+          <button className='btn btn-primary' onClick={() => buyNFT(nft)}>Buy</button>
     </div>
   );
 };

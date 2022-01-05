@@ -51,7 +51,8 @@ const Product = () => {
   }
 
   async function buyNFT(nft){
-    const web3Modal = new Web3Modal("https://rinkeby.infura.io/v3/7f8851cb0d8d4559b402a52ea3370cd7");
+    console.log(nft.price.toString());
+    const web3Modal = new Web3Modal();
     const connection = await web3Modal.connect();
     const provider = new ethers.providers.Web3Provider(connection);
 
@@ -61,12 +62,14 @@ const Product = () => {
 
     //set the price
     const price = ethers.utils.parseUnits(nft.price.toString(), 'ether');
+    console.log(price);
 
     //make the sale
     const transaction = await contract.createMarketSale(nftaddress, nft.tokenId, {
       value: price
     });
     await transaction.wait();
+    console.log('Transaction complete');
 
     loadNFTs()
   }
@@ -138,13 +141,13 @@ const Product = () => {
         <div className='row g-5 mt_dec--30'>
           
             {nfts.map((nft, index) => (
-              <div
+              <div key={index}
               className='col-5 col-lg-4 col-md-6 col-sm-6 col-12'
               data-sal='slide-up'
               data-sal-delay='150'
               data-sal-duration='800'
             >
-              <Single nft ={nft}/>
+              <Single nft ={nft} buyNFT={buyNFT}/>
           </div>
             ))}
             {/*  <Single  /> */}
