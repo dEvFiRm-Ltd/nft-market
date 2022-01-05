@@ -4,25 +4,45 @@ import './style.css';
 
 const SingleBidding = ({ img, duration, bidders, title, likes }) => {
   const ending = new Date('Jan 5, 2022 15:37:25').getTime();
-  let current = new Date().getTime();
-  let days, hours, minutes, seconds;
-  const counter = () => {
-    let timer = ending - current;
-    days = Math.floor(timer / (1000 * 60 * 60 * 24));
-    hours = Math.floor((timer % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    minutes = Math.floor((timer % (1000 * 60 * 60)) / (1000 * 60));
-    seconds = Math.floor((timer % (1000 * 60)) / 1000);
+  const [timerDays, setTimerDays] = useState();
+  const [timerHours, setTimerHours] = useState();
+  const [timerMinutes, setTimerMinutes] = useState();
+  const [timerSeconds, setTimerSeconds] = useState();
+
+  let interval;
+
+  const startTimer = () => {
+    const countDownDate = new Date('Jan 20, 2022 16:37:25').getTime();
+
+    interval = setInterval(() => {
+      const now = new Date().getTime();
+
+      const distance = countDownDate - now;
+
+      const days = Math.floor(distance / (24 * 60 * 60 * 1000));
+      const hours = Math.floor(
+        (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
+      const seconds = Math.floor((distance % (60 * 1000)) / 1000);
+
+      if (distance < 0) {
+        // Stop Timer
+
+        clearInterval(interval.current);
+      } else {
+        // Update Timer
+        setTimerDays(days);
+        setTimerHours(hours);
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
+      }
+    });
   };
-  const [timeLeft, setTimeLeft] = useState(counter());
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setTimeLeft(counter());
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, [timeLeft]);
-
+    startTimer();
+  });
   return (
     <div className='single-slide-product'>
       <div className='product-style-one'>
@@ -35,19 +55,19 @@ const SingleBidding = ({ img, duration, bidders, title, likes }) => {
           </a>
           <div className='countdown'>
             <div className='countdown-container days'>
-              <span className='countdown-value'>{days}</span>
+              <span className='countdown-value'>{timerDays}</span>
               <span className='countdown-heading'>Day&rsquo;s</span>
             </div>
             <div className='countdown-container hours'>
-              <span className='countdown-value'>{hours}</span>
+              <span className='countdown-value'>{timerHours}</span>
               <span className='countdown-heading'>Hour&rsquo;s</span>
             </div>
             <div className='countdown-container minutes'>
-              <span className='countdown-value'>{minutes}</span>
+              <span className='countdown-value'>{timerMinutes}</span>
               <span className='countdown-heading'>Min&rsquo;s</span>
             </div>
             <div className='countdown-container seconds'>
-              <span className='countdown-value'>{seconds}</span>
+              <span className='countdown-value'>{timerSeconds}</span>
               <span className='countdown-heading'>Sec&rsquo;s</span>
             </div>
           </div>
