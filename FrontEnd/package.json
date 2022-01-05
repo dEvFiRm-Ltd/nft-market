@@ -16,6 +16,7 @@
         "ethereum-waffle": "^3.4.0",
         "ethers": "^5.5.2",
         "feather-icons": "^4.28.0",
+        "firebase": "^8.10.0",
         "hardhat": "^2.8.0",
         "ipfs-http-client": "^55.0.0",
         "react": "^17.0.2",
