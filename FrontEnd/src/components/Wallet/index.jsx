@@ -1,8 +1,94 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './main';
 import './style.css';
+import { db } from '../../firebase';
+import { ethers } from 'ethers';
+
 
 const Wallet = () => {
+    const [errorMessage, setErrorMessage] = useState(null);
+    const [defaultAccount, setDefaultAccount] = useState(null);
+    const [userBalance, setUserBalance] = useState(null);
+    const [connButtonText, setConnButtonText] = useState('Connect Wallet');
+    const [data, setData] = useState([]);
+    // const [haveAccount, setHaveAccount] = useState(false);
+
+    function saveWalletData() {
+        console.log('in' + defaultAccount);
+        db.collection('User').add({ name: 'hasib', address: defaultAccount, proPic: '' })
+            .then((res) => {
+                console.log(res.id);
+                db.collection('User').doc(res.id).update({ id: res.id }).catch(err => console.log(err))
+            })
+            .catch((err) => console.log(err))
+        console.log('save data');
+    }
+    useEffect(() => {
+       
+        db.collection('User').onSnapshot(data=>{
+            //  console.log(data);
+            let arr =[];
+            data.forEach((item)=>{
+              arr.push(item.data());
+            })
+            setData(arr)
+          
+           })
+
+        //    const haveAccount = data.filter(item => item.address === defaultAccount)
+        //         console.log(haveAccount.length);
+        //         if (haveAccount.length===0) {
+        //             console.log('ok');
+        //             // saveWalletData();
+        //         }
+
+    }, [defaultAccount])
+
+    //code for connect account
+    const connectWalletHandler = () => {
+        if (window.ethereum && window.ethereum.isMetaMask) {
+            if(connButtonText === 'Wallet Connected'){
+                alert('Wallet already connected');
+            }
+            // console.log('MetaMask Here!');
+            window.ethereum.request({ method: 'eth_requestAccounts' })
+                .then(result => {
+                    setConnButtonText('Wallet Connected');
+                    getAccountBalance(result[0]);
+                    setDefaultAccount(result[0]);
+                })
+                .catch(error => {
+                    setErrorMessage(error.message);
+                });
+                
+                const haveAccount = data.filter(item => item.address === defaultAccount)
+                console.log(haveAccount);
+                console.log(haveAccount.length);
+                if (haveAccount.length) {
+                    console.log('ok');
+                    // saveWalletData();
+                }
+
+        } else {
+            console.log('Need to install MetaMask');
+            setErrorMessage('Please install MetaMask browser extension to interact');
+        }
+    }
+
+    const getAccountBalance = (account) => {
+
+        window.ethereum.request({ method: 'eth_getBalance', params: [account, 'latest'] })
+            .then(balance => {
+                setUserBalance(ethers.utils.formatEther(balance));
+            })
+            .catch(error => {
+                setErrorMessage(error.message);
+            });
+    };
+
+    // if(defaultAccount){
+    //     saveWalletData();
+    // }
     return (
         <>
             {/* start page title area */}
@@ -84,6 +170,7 @@ const Wallet = () => {
                                                     wallet
                                                 </p>
                                             </div>
+
                                         </div>
                                         <a className="over-link" href="!#">
                                             {' '}
@@ -91,6 +178,10 @@ const Wallet = () => {
                                     </div>
                                 </div>
                                 {/* start single wallet */}
+                                <h5>Accont: {defaultAccount}</h5>
+                               <h3>Balance: {userBalance}</h3>
+                                <button onClick={connectWalletHandler}>{connButtonText}</button>
+
                             </div>
                         </div>
                     </div>
