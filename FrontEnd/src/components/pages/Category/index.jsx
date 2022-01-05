@@ -2,6 +2,15 @@ import React from 'react';
 import Single from '../../Single-Nft';
 
 const Category = () => {
+  const data = {
+    description: 'This is a description',
+    image: `${process.env.PUBLIC_URL}/images/client/client-1.png`,
+    name: 'dummy',
+    owner: 'voot',
+    price: '0.02',
+    seller: 'wiclk',
+    tokenId: '1',
+  };
   return (
     <div className='rn-product-area rn-section-gapTop masonary-wrapper-activation'>
       <div className='container'>
@@ -42,7 +51,7 @@ const Category = () => {
             <div className='resizer' />
             {/* start single product */}
             <div className='grid-metro-item cat--1 cat--3'>
-              <Single />
+              <Single nft={data} />
             </div>
             {/* end single product */}
           </div>
