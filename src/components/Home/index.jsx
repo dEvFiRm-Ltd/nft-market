@@ -1,11 +1,11 @@
 import React from 'react';
-import Bidding from '../../Bidding/Bidding';
-import Collection from '../../Collections/Collection/Collection';
-import Hero from '../../Hero/Hero';
-import CollectionOfAsseets from '../../MyAsset/CollectionOfAsseets';
-import Product from '../../Product';
-import Service from '../../Service';
-import TopSeller from '../../TopSeller';
+import Bidding from '../Bidding/Bidding';
+import Collection from '../Collections/Collection/Collection';
+import Hero from '../Hero/Hero';
+import CollectionOfAsseets from '../MyAsset/CollectionOfAsseets';
+import Product from '../Product/Product';
+import Service from '../Service/Service';
+import TopSeller from '../TopSeller/TopSeller';
 import './main';
 import './style.css';
 

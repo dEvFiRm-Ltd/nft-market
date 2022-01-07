@@ -6,9 +6,9 @@ import Web3Modal from 'web3modal';
 
 const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0');
 
-import { nftaddress, nftmarketaddress } from '../../../Backend/config';
-import NFT from '../../../Backend/artifacts/contracts/NFT.sol/NFT.json';
-import Market from '../../../Backend/artifacts/contracts/NFTMarket.sol/NFTMarket.json';
+import { nftaddress, nftmarketaddress } from '../../Backend/config';
+import NFT from '../../Backend/artifacts/contracts/NFT.sol/NFT.json';
+import Market from '../../Backend/artifacts/contracts/NFTMarket.sol/NFTMarket.json';
 const CreateNft = () => {
   const [fileUrl, setFileUrl] = useState(null);
   const [formInput, updateFormInput] = useState({

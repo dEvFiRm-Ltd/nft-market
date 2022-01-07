@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from '../../Banner';
-import Single from '../../nft/Single-Nft/Single';
+import Banner from '../Banner/Banner';
+import Single from '../nft/Single-Nft/Single';
 
 function Profile() {
   return (
