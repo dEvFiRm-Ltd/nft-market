@@ -2,6 +2,7 @@ import React from 'react';
 import Bidding from '../../Bidding';
 import Collection from '../../Collection';
 import Hero from '../../Hero';
+import CollectionOfAsseets from '../../MyAsset/CollectionOfAsseets';
 import Product from '../../Product';
 import Service from '../../Service';
 import TopSeller from '../../TopSeller';
@@ -29,6 +30,8 @@ const Home = () => {
       {/* collection area Start */}
       <Collection />
       {/* collection area End */}
+
+      <CollectionOfAsseets />
     </>
   );
 };

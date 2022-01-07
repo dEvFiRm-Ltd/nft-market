@@ -9,15 +9,15 @@ function Collection() {
                     <a href="product-details.html" className="rn-collection-inner-one">
                         <div className="collection-wrapper">
                             <div className="collection-big-thumbnail">
-                                <img src="assets/images/collection/collection-lg-01.jpg" alt="Nft_Profile">
+                                <img src="assets/images/collection/collection-lg-01.jpg" alt="Nft_Profile"/>
                             </div>
                             <div className="collenction-small-thumbnail">
-                                <img src="assets/images/collection/collection-sm-01.jpg" alt="Nft_Profile">
-                                <img src="assets/images/collection/collection-sm-02.jpg" alt="Nft_Profile">
-                                <img src="assets/images/collection/collection-sm-03.jpg" alt="Nft_Profile">
+                                <img src="assets/images/collection/collection-sm-01.jpg" alt="Nft_Profile"/>
+                                <img src="assets/images/collection/collection-sm-02.jpg" alt="Nft_Profile"/>
+                                <img src="assets/images/collection/collection-sm-03.jpg" alt="Nft_Profile"/>
                             </div>
                             <div className="collection-profile">
-                                <img src="assets/images/client/client-15.png" alt="Nft_Profile">
+                                <img src="assets/images/client/client-15.png" alt="Nft_Profile"/>
                             </div>
                             <div className="collection-deg">
                                 <h6 className="title">Cubic Trad</h6>

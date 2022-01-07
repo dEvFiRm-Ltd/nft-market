@@ -3,6 +3,7 @@ import './main';
 import './style.css';
 
 const Single = ({ nft,buyNFT }) => {
+  console.log(nft);
   const { 
     description,
     image,
