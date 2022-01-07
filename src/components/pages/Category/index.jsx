@@ -1,5 +1,5 @@
 import React from 'react';
-import Single from '../../Single-Nft';
+import Single from '../../nft/Single-Nft/Single';
 
 const Category = () => {
   const data = {

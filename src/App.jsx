@@ -2,14 +2,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Collection from './components/Collections/Collection/Collection';
 import Pages from './components/pages';
-import About from './components/pages/About';
-import AllProducts from './components/pages/All-Nft';
+import About from './components/About';
+import AllProducts from './components/nft/All-Nft/AllProducts';
 import Category from './components/pages/Category';
 import CreateNft from './components/pages/Create-Nft';
 import EditProfile from './components/pages/Edit-Profile';
 import Home from './components/pages/Home';
 import Profile from './components/pages/Profile';
-import SingleProduct from './components/pages/Single-Nft';
+import SingleProduct from './components/nft/NFT-Details/NftDetails';
 import Upload from './components/pages/Upload';
 import Wallet from './components/Wallet';
 
