@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Collection from './components/Collections/Collection/Collection';
+import Collection from './components/Collections/Collection';
 import Pages from './components';
 import About from './components/About/About';
 import AllProducts from './components/nft/All-Nft/AllProducts';
