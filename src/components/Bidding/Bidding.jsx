@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import SingleBidding from '../Single-Bidding';
+import SingleBidding from './Single-Bidding/SingleBidding';
 import './main';
 import './style.css';
 

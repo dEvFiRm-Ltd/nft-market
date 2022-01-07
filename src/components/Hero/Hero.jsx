@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import SingleHero from '../Single-Hero';
+import SingleHero from './Single-Hero/SingleHero';
 import './main';
 import './style.css';
 
