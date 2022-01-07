@@ -1,6 +1,6 @@
 import React from 'react';
 import Bidding from '../../Bidding';
-import Collection from '../../Collection';
+import Collection from '../../Collections/Collection/Collection';
 import Hero from '../../Hero';
 import CollectionOfAsseets from '../../MyAsset/CollectionOfAsseets';
 import Product from '../../Product';
