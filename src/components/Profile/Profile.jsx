@@ -67,7 +67,7 @@ function Profile() {
               </div>
             </div>
           </div>
-
+          <CollectionOfAsseets />
           <div className='tab-content rn-bid-content' id='nav-tabContent'>
             <div
               className='tab-pane row g-5 d-flex fade'
@@ -567,7 +567,6 @@ function Profile() {
               </div>
             </div>
           </div>
-          <CollectionOfAsseets />
         </div>
       </div>
     </>

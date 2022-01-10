@@ -118,4 +118,6 @@ typechain
 cache
 artifacts
 
+/build
+
 */p-key.txt
