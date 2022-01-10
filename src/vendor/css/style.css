@@ -11225,7 +11225,7 @@ body.sal-disabled [data-sal|='flip'] {
 .haeder-default .header-left {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     flex-basis: 55%;
 }
 @media only screen and (max-width: 479px) {
