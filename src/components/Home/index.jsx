@@ -7,8 +7,18 @@ import Service from '../Service/Service';
 import TopSeller from '../TopSeller/TopSeller';
 import './main';
 import './style.css';
+import { useMoralis } from 'react-moralis';
 
 const Home = () => {
+  const { authenticate, isAuthenticated, user } = useMoralis();
+
+  if (!isAuthenticated) {
+    return (
+      <div>
+        <button onClick={() => authenticate()}>Authenticate</button>
+      </div>
+    );
+  }
   return (
     <>
       {/* start banner area */}
