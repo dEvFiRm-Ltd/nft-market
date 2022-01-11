@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useMoralis } from 'react-moralis';
 import './main';
 import './style.css';
 
 const HeaderDekstop = () => {
+  const { authenticate, isAuthenticated, user } = useMoralis();
   const [theme, setTheme] = useState('dark');
   useEffect(() => {
     if (theme === 'light') {
@@ -101,94 +103,112 @@ const HeaderDekstop = () => {
                 </a>
               </div>
             </div>
-
-            <div className='setting-option header-btn'>
-              <div className='icon-box'>
-                <Link className='btn btn-primary-alta btn-small' to='upload'>
-                  Create
-                </Link>
-              </div>
-            </div>
-            <div className='setting-option rn-icon-list user-account'>
-              <div className='icon-box'>
-                <a href='author.html'>
-                  <img
-                    src={`${process.env.PUBLIC_URL}/images/icons/boy-avater.png`}
-                    alt='Images'
-                  />
-                </a>
-                <div className='rn-dropdown'>
-                  <div className='rn-inner-top'>
-                    <h4 className='title'>
-                      <a href='product-details.html'>Christopher William</a>
-                    </h4>
-                    <span>
-                      <a href='#!'>Set Display Name</a>
-                    </span>
+            {isAuthenticated ? (
+              <>
+                <div className='setting-option header-btn'>
+                  <div className='icon-box'>
+                    <Link
+                      className='btn btn-primary-alta btn-small'
+                      to='upload'
+                    >
+                      Create
+                    </Link>
                   </div>
-                  <div className='rn-product-inner'>
-                    <ul className='product-list'>
-                      <li className='single-product-list'>
-                        <div className='thumbnail'>
-                          <a href='product-details.html'>
-                            <img
-                              src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-07.jpg`}
-                              alt='Nft Product Images'
-                            />
-                          </a>
-                        </div>
-                        <div className='content'>
-                          <h6 className='title'>
-                            <a href='product-details.html'>Balance</a>
-                          </h6>
-                          <span className='price'>25 ETH</span>
-                        </div>
-                        <div className='button' />
-                      </li>
-                      <li className='single-product-list'>
-                        <div className='thumbnail'>
-                          <a href='product-details.html'>
-                            <img
-                              src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-01.jpg`}
-                              alt='Nft Product Images'
-                            />
-                          </a>
-                        </div>
-                        <div className='content'>
-                          <h6 className='title'>
-                            <a href='product-details.html'>Balance</a>
-                          </h6>
-                          <span className='price'>25 ETH</span>
-                        </div>
-                        <div className='button' />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className='add-fund-button mt--20 pb--20'>
-                    <a className='btn btn-primary-alta w-100' href='#!'>
-                      Add Your More Funds
+                </div>
+                <div className='setting-option rn-icon-list user-account'>
+                  <div className='icon-box'>
+                    <a href='author.html'>
+                      <img
+                        src={`${process.env.PUBLIC_URL}/images/icons/boy-avater.png`}
+                        alt='Images'
+                      />
                     </a>
+                    <div className='rn-dropdown'>
+                      <div className='rn-inner-top'>
+                        <h4 className='title'>
+                          <a href='product-details.html'>Christopher William</a>
+                        </h4>
+                        <span>
+                          <a href='#!'>Set Display Name</a>
+                        </span>
+                      </div>
+                      <div className='rn-product-inner'>
+                        <ul className='product-list'>
+                          <li className='single-product-list'>
+                            <div className='thumbnail'>
+                              <a href='product-details.html'>
+                                <img
+                                  src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-07.jpg`}
+                                  alt='Nft Product Images'
+                                />
+                              </a>
+                            </div>
+                            <div className='content'>
+                              <h6 className='title'>
+                                <a href='product-details.html'>Balance</a>
+                              </h6>
+                              <span className='price'>25 ETH</span>
+                            </div>
+                            <div className='button' />
+                          </li>
+                          <li className='single-product-list'>
+                            <div className='thumbnail'>
+                              <a href='product-details.html'>
+                                <img
+                                  src={`${process.env.PUBLIC_URL}/images/portfolio/portfolio-01.jpg`}
+                                  alt='Nft Product Images'
+                                />
+                              </a>
+                            </div>
+                            <div className='content'>
+                              <h6 className='title'>
+                                <a href='product-details.html'>Balance</a>
+                              </h6>
+                              <span className='price'>25 ETH</span>
+                            </div>
+                            <div className='button' />
+                          </li>
+                        </ul>
+                      </div>
+                      <div className='add-fund-button mt--20 pb--20'>
+                        <a className='btn btn-primary-alta w-100' href='#!'>
+                          Add Your More Funds
+                        </a>
+                      </div>
+                      <ul className='list-inner'>
+                        <li>
+                          <Link to='profile'>My Profile</Link>
+                        </li>
+                        <li>
+                          <a href='author.html'>Edit Profile</a>
+                        </li>
+                        <li>
+                          <Link to='wallet'>Wallet</Link>
+                        </li>
+                        <li>
+                          <Link to='details'>Single Product</Link>
+                        </li>
+                        <li>
+                          <a href='login.html'>Sign Out</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <ul className='list-inner'>
-                    <li>
-                      <Link to='profile'>My Profile</Link>
-                    </li>
-                    <li>
-                      <a href='author.html'>Edit Profile</a>
-                    </li>
-                    <li>
-                      <Link to='wallet'>Wallet</Link>
-                    </li>
-                    <li>
-                      <Link to='details'>Single Product</Link>
-                    </li>
-                    <li>
-                      <a href='login.html'>Sign Out</a>
-                    </li>
-                  </ul>
+                </div>
+              </>
+            ) : (
+              <div className='setting-option header-btn'>
+                <div className='icon-box'>
+                  <button
+                    type='button'
+                    onClick={() => authenticate()}
+                    className='btn btn-primary-alta btn-small'
+                  >
+                    Connect Wallet
+                  </button>
                 </div>
               </div>
-            </div>
+            )}
             <div className='setting-option mobile-menu-bar d-block d-xl-none'>
               <div className='hamberger'>
                 <button type='button' className='hamberger-button'>
