@@ -5,7 +5,7 @@ import './main';
 import './style.css';
 
 const HeaderDekstop = () => {
-  const { authenticate, isAuthenticated, user } = useMoralis();
+  const { authenticate, isAuthenticated, user, logout } = useMoralis();
   const [theme, setTheme] = useState('dark');
   useEffect(() => {
     if (theme === 'light') {
@@ -189,7 +189,9 @@ const HeaderDekstop = () => {
                           <Link to='details'>Single Product</Link>
                         </li>
                         <li>
-                          <a href='login.html'>Sign Out</a>
+                          <button type='button' onClick={() => logout()}>
+                            Sign Out
+                          </button>
                         </li>
                       </ul>
                     </div>
