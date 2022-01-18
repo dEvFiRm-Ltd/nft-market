@@ -1,15 +1,8 @@
-# Basic Sample Hardhat Project
+# Hardhat Copile commands
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+1: npx hardhat run scripts/sample-script.js
+2: npx hardhat compile
 
-Try running some of the following tasks:
+<h2> Note </h2>
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+Make sure the library @openzeppelin/contracts, imported from contracts/NFT.sol, is installed.
