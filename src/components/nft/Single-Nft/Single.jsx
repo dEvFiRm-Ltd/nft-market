@@ -2,34 +2,23 @@ import React from 'react';
 import './main';
 import './style.css';
 
-const Single = ({ nft,buyNFT }) => {
-  console.log(nft);
-  const { 
-    description,
-    image,
-    name,
-    owner,
-    price,
-    seller,
-    tokenId } = nft;
-  // console.log(description,
-  //   image,
-  //   name,
-  //   owner,
-  //   price,
-  //   seller,
-  //   tokenId);
+const Single = ({ nft, buyNFT }) => {
+  const { description, image, name, owner, price, seller, tokenId } = nft;
+
   return (
     <div className='product-style-one no-overlay with-placeBid'>
       <div className='card-thumbnail'>
         <a href='product-details.html'>
           <img
-            src={image}
+            src={
+              image
+                ? image
+                : `${process.env.PUBLIC_URL}/images/portfolio/portfolio-06.jpg`
+            }
             alt='NFT_portfolio'
           />
         </a>
         <a href='#' className='btn btn-primary'>
-         
           Place Bid
         </a>
       </div>
@@ -101,11 +90,11 @@ const Single = ({ nft,buyNFT }) => {
         </div>
       </div>
       <a href='product-details.html'>
-        <span className='product-name'>{name}</span>
+        <span className='product-name'>{name ? name : `Lorem Name`}</span>
       </a>
       <span className='latest-bid'>Highest bid 1/20</span>
       <div className='bid-react-area'>
-        <div className='last-bid'>{price}wETH</div>
+        <div className='last-bid'>{price ? price : '05'}wETH</div>
         <div className='react-area'>
           <svg
             viewBox='0 0 17 16'
@@ -123,7 +112,9 @@ const Single = ({ nft,buyNFT }) => {
           <span className='number'>322</span>
         </div>
       </div>
-          <button className='btn btn-primary' onClick={() => buyNFT(nft)}>Buy</button>
+      <button className='btn btn-primary' onClick={() => buyNFT(nft)}>
+        Buy
+      </button>
     </div>
   );
 };
