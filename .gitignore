@@ -121,3 +121,9 @@ artifacts
 /build
 
 */p-key.txt
+
+firebase.json
+.firebaserc
+.firebase
+/.vscode
+/.github
