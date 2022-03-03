@@ -6,8 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <MoralisProvider
-    appId='nrLI1yyQmHC5VfrK3bgYpLCHsuNd7X6eclCfDJPP'
-    serverUrl='https://w3xusiqi6fqk.usemoralis.com:2053/server'
+    appId={process.env.MORALIS_API_KEY}
+    serverUrl={process.env.MORALIS_SERVER_URL}
   >
     <App />
   </MoralisProvider>,
